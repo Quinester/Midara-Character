@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Middara Character Manager</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="app">
+
+  <aside id="sidebar">
+    <h1>Middara<span>Character Manager</span></h1>
+
+    <div class="sidebar-actions">
+      <button id="newCharBtn" class="btn primary">+ New Character</button>
+      <button id="fromTemplateBtn" class="btn">+ From Template</button>
+      <button id="importBtn" class="btn">Import</button>
+    </div>
+    <button id="libraryBtn" class="btn full-width">📚 Library</button>
+
+    <div id="characterList"></div>
+  </aside>
+
+  <main id="content">
+
+    <div id="emptyState">
+      <p>No character selected.</p>
+      <p class="muted">Create a new character or import one to get started.</p>
+    </div>
+
+    <div id="characterSheet" class="hidden">
+
+      <header class="sheet-header">
+        <div class="header-fields">
+          <input id="charName" class="char-name-input" placeholder="Character Name" />
+          <input id="charClass" class="char-class-input" placeholder="Class / Archetype" />
+        </div>
+        <div class="header-actions">
+          <button id="saveTemplateBtn" class="icon-btn" title="Save as reusable template">⭐</button>
+          <button id="duplicateBtn" class="icon-btn" title="Duplicate character">⧉</button>
+          <button id="exportBtn" class="icon-btn" title="Export to file">⭳</button>
+          <button id="deleteBtn" class="icon-btn danger" title="Delete character">✕</button>
+        </div>
+      </header>
+
+      <nav class="tabs">
+        <button class="tab-btn active" data-tab="stats">Stats</button>
+        <button class="tab-btn" data-tab="inventory">Inventory</button>
+        <button class="tab-btn" data-tab="skills">Skills</button>
+        <button class="tab-btn" data-tab="esper">Esper</button>
+        <button class="tab-btn" data-tab="notes">Notes</button>
+      </nav>
+
+      <!-- STATS TAB -->
+      <section id="tab-stats" class="tab-panel active">
+        <div class="stat-grid">
+          <div class="stat-box">
+            <label>Level</label>
+            <input type="number" id="statLevel" min="1" />
+          </div>
+          <div class="stat-box">
+            <label>XP</label>
+            <input type="number" id="statXp" min="0" />
+          </div>
+          <div class="stat-box">
+            <label>Armor</label>
+            <input type="number" id="statArmor" min="0" />
+          </div>
+          <div class="stat-box">
+            <label>Defense</label>
+            <input type="number" id="statDefense" min="0" />
+          </div>
+          <div class="stat-box">
+            <label>Movement</label>
+            <input type="number" id="statMovement" min="0" />
+          </div>
+        </div>
+
+        <div class="health-box">
+          <label>Health</label>
+          <div class="health-row">
+            <input type="number" id="healthCurrent" min="0" />
+            <span>/</span>
+            <input type="number" id="healthMax" min="0" />
+          </div>
+          <div class="health-bar"><div id="healthBarFill" class="health-bar-fill"></div></div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">
+            <h2>Status Effects</h2>
+          </div>
+          <div id="statusList" class="chip-list"></div>
+          <form id="statusForm" class="inline-form">
+            <input type="text" id="statusInput" placeholder="e.g. Poisoned (2 turns)" />
+            <button type="submit" class="btn small">Add</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- INVENTORY TAB -->
+      <section id="tab-inventory" class="tab-panel">
+        <div class="section-header">
+          <h2>Inventory &amp; Equipment</h2>
+        </div>
+        <div id="inventoryList" class="list"></div>
+        <div class="library-pick-row">
+          <select id="itemLibrarySelect"><option value="">— Pick from Library —</option></select>
+          <button type="button" id="useLibraryItemBtn" class="btn small">Use</button>
+        </div>
+        <form id="inventoryForm" class="item-form">
+          <input type="text" id="itemName" placeholder="Item name" required />
+          <select id="itemSlot">
+            <option>Weapon</option>
+            <option>Armor</option>
+            <option>Accessory</option>
+            <option>Consumable</option>
+            <option>Other</option>
+          </select>
+          <label class="checkbox-label"><input type="checkbox" id="itemEquipped" /> Equipped</label>
+          <input type="text" id="itemNotes" placeholder="Notes (modifiers, qty, etc.)" />
+          <label class="checkbox-label"><input type="checkbox" id="itemSaveToLibrary" /> Save to Library</label>
+          <button type="submit" class="btn small">Add Item</button>
+        </form>
+      </section>
+
+      <!-- SKILLS TAB -->
+      <section id="tab-skills" class="tab-panel">
+        <div class="section-header">
+          <h2>Disciplines</h2>
+        </div>
+        <div id="disciplineGrid" class="discipline-grid"></div>
+
+        <div class="section-header">
+          <h2>Abilities</h2>
+        </div>
+        <div id="abilityList" class="list"></div>
+        <div class="library-pick-row">
+          <select id="abilityLibrarySelect"><option value="">— Pick from Library —</option></select>
+          <button type="button" id="useLibraryAbilityBtn" class="btn small">Use</button>
+        </div>
+        <form id="abilityForm" class="item-form">
+          <input type="text" id="abilityName" placeholder="Ability name" required />
+          <select id="abilityDiscipline"></select>
+          <input type="number" id="abilityTier" placeholder="Tier" min="1" style="width:70px" />
+          <label class="checkbox-label"><input type="checkbox" id="abilityLearned" /> Learned</label>
+          <input type="text" id="abilityDesc" placeholder="Description / effect" />
+          <label class="checkbox-label"><input type="checkbox" id="abilitySaveToLibrary" /> Save to Library</label>
+          <button type="submit" class="btn small">Add Ability</button>
+        </form>
+      </section>
+
+      <!-- ESPER TAB -->
+      <section id="tab-esper" class="tab-panel">
+        <label class="checkbox-label esper-toggle">
+          <input type="checkbox" id="esperActive" /> This character has a summoned Esper
+        </label>
+
+        <div id="esperEmptyMsg" class="muted">No Esper for this character yet. Check the box above to add one.</div>
+
+        <div id="esperPanel" class="esper-panel hidden">
+          <input type="text" id="esperName" class="esper-name-input" placeholder="Esper name" />
+
+          <div class="stat-grid esper-stat-grid">
+            <div class="stat-box">
+              <label>Armor</label>
+              <input type="number" id="esperArmor" min="0" />
+            </div>
+            <div class="stat-box">
+              <label>Defense</label>
+              <input type="number" id="esperDefense" min="0" />
+            </div>
+            <div class="stat-box">
+              <label>Movement</label>
+              <input type="number" id="esperMovement" min="0" />
+            </div>
+          </div>
+
+          <div class="health-box">
+            <label>Health</label>
+            <div class="health-row">
+              <input type="number" id="esperHealthCurrent" min="0" />
+              <span>/</span>
+              <input type="number" id="esperHealthMax" min="0" />
+            </div>
+            <div class="health-bar"><div id="esperHealthBarFill" class="health-bar-fill esper-fill"></div></div>
+          </div>
+
+          <div class="section">
+            <div class="section-header">
+              <h2>Status Effects</h2>
+            </div>
+            <div id="esperStatusList" class="chip-list"></div>
+            <form id="esperStatusForm" class="inline-form">
+              <input type="text" id="esperStatusInput" placeholder="e.g. Enraged (1 turn)" />
+              <button type="submit" class="btn small">Add</button>
+            </form>
+          </div>
+
+          <div class="section">
+            <div class="section-header">
+              <h2>Abilities</h2>
+            </div>
+            <div id="esperAbilityList" class="list"></div>
+            <form id="esperAbilityForm" class="item-form">
+              <input type="text" id="esperAbilityName" placeholder="Ability name" required />
+              <input type="text" id="esperAbilityDesc" placeholder="Description / effect" />
+              <label class="checkbox-label"><input type="checkbox" id="esperAbilityActive" /> Active</label>
+              <button type="submit" class="btn small">Add Ability</button>
+            </form>
+          </div>
+
+          <div class="section">
+            <div class="section-header">
+              <h2>Esper Notes</h2>
+            </div>
+            <textarea id="esperNotes" placeholder="Summon conditions, bond level, flavor..."></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOTES TAB -->
+      <section id="tab-notes" class="tab-panel">
+        <div class="section-header">
+          <h2>Campaign Notes</h2>
+        </div>
+        <textarea id="notesArea" placeholder="Session notes, backstory, party decisions, chapter progress..."></textarea>
+      </section>
+
+    </div>
+
+    <!-- LIBRARY VIEW -->
+    <div id="libraryView" class="hidden">
+      <header class="sheet-header">
+        <div class="header-fields">
+          <h1 class="view-title">Library</h1>
+          <p class="muted">Reusable presets for items, abilities, and character templates. Pick these instead of retyping.</p>
+        </div>
+      </header>
+
+      <nav class="tabs">
+        <button class="lib-tab-btn active" data-libtab="items">Items</button>
+        <button class="lib-tab-btn" data-libtab="abilities">Abilities</button>
+        <button class="lib-tab-btn" data-libtab="templates">Character Templates</button>
+      </nav>
+
+      <section id="libtab-items" class="lib-tab-panel active">
+        <div id="libraryItemList" class="list"></div>
+        <form id="libraryItemForm" class="item-form">
+          <input type="text" id="libItemName" placeholder="Item name" required />
+          <select id="libItemSlot">
+            <option>Weapon</option>
+            <option>Armor</option>
+            <option>Accessory</option>
+            <option>Consumable</option>
+            <option>Other</option>
+          </select>
+          <input type="text" id="libItemNotes" placeholder="Notes (stats, effects, etc.)" />
+          <button type="submit" class="btn small">Add to Library</button>
+        </form>
+      </section>
+
+      <section id="libtab-abilities" class="lib-tab-panel">
+        <div id="libraryAbilityList" class="list"></div>
+        <form id="libraryAbilityForm" class="item-form">
+          <input type="text" id="libAbilityName" placeholder="Ability name" required />
+          <select id="libAbilityDiscipline"></select>
+          <input type="number" id="libAbilityTier" placeholder="Tier" min="1" style="width:70px" />
+          <input type="text" id="libAbilityDesc" placeholder="Description / effect" />
+          <button type="submit" class="btn small">Add to Library</button>
+        </form>
+      </section>
+
+      <section id="libtab-templates" class="lib-tab-panel">
+        <div id="libraryTemplateList" class="list"></div>
+        <p class="muted">Save a template from any character sheet using the ⭐ button in its header.</p>
+      </section>
+    </div>
+
+  </main>
+</div>
+
+<!-- MODAL -->
+<div id="modalOverlay" class="modal-overlay hidden">
+  <div class="modal-box">
+    <h3 id="modalTitle"></h3>
+    <div id="modalBody"></div>
+    <div class="modal-actions">
+      <button id="modalCancelBtn" class="btn">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="renderer.js"></script>
+</body>
+</html>
