@@ -7,4 +7,5 @@ contextBridge.exposeInMainWorld('api', {
   importCharacter: () => ipcRenderer.invoke('character:import'),
   loadLibrary: () => ipcRenderer.invoke('library:load'),
   saveLibrary: (library) => ipcRenderer.invoke('library:save', library),
+  importLibraryFile: () => ipcRenderer.invoke('library:importFile'),
 });

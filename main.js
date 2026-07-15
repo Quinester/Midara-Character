@@ -2,6 +2,21 @@ const { app, BrowserWindow, ipcMain, dialog } = require('electron');
 const path = require('path');
 const fs = require('fs/promises');
 
+// Prevent multiple instances from fighting over the same userData/cache folder
+// (a common cause of "Unable to move the cache: Access is denied" on Windows).
+const gotSingleInstanceLock = app.requestSingleInstanceLock();
+if (!gotSingleInstanceLock) {
+  app.quit();
+} else {
+  app.on('second-instance', () => {
+    const win = BrowserWindow.getAllWindows()[0];
+    if (win) {
+      if (win.isMinimized()) win.restore();
+      win.focus();
+    }
+  });
+}
+
 function dataFilePath() {
   return path.join(app.getPath('userData'), 'characters.json');
 }
@@ -80,6 +95,23 @@ ipcMain.handle('library:load', async () => {
 ipcMain.handle('library:save', async (_event, library) => {
   await writeLibrary(library);
   return true;
+});
+
+ipcMain.handle('library:importFile', async () => {
+  const win = BrowserWindow.getFocusedWindow();
+  const { canceled, filePaths } = await dialog.showOpenDialog(win, {
+    title: 'Import Library Data',
+    filters: [{ name: 'JSON', extensions: ['json'] }],
+    properties: ['openFile'],
+  });
+  if (canceled || !filePaths || filePaths.length === 0) return { canceled: true };
+  try {
+    const raw = await fs.readFile(filePaths[0], 'utf-8');
+    const parsed = JSON.parse(raw);
+    return { canceled: false, data: parsed };
+  } catch (err) {
+    return { canceled: true, error: String(err) };
+  }
 });
 
 ipcMain.handle('character:export', async (_event, character) => {

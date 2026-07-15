@@ -1,0 +1,1064 @@
+{
+  "source": "Tabletop Simulator mod: Middara: Unintentional Malum - Act 1 (workshop id 2016593204)",
+  "abilities": [
+    {
+      "name": "Banished Knowledge",
+      "discipline": "Assemblage",
+      "tier": 1,
+      "description": "Exhaust: An ally within SOI Gains Haste. Reduce the SP cost of this Discipline by 1 if the target is an ally other than yourself. (\"There is safety in not knowing.\")"
+    },
+    {
+      "name": "Euthanasia",
+      "discipline": "Assemblage",
+      "tier": 1,
+      "description": "Cast a Spell 6. Inflict Wilt and deal 4 Magic DMG. Then, if the target was already Inflicted with Wilt, Inflict Condemn. If they were already Inflicted with both Condemn and Wilt, roll the Black. If a Skull is rolled, the target is Defeated."
+    },
+    {
+      "name": "Familiar",
+      "discipline": "Assemblage",
+      "tier": 1,
+      "description": "Passive: After learning this Discipline, choose a Familiar and place it face up next to your Adventurer card. Your Familiar cannot be changed."
+    },
+    {
+      "name": "Forebode",
+      "discipline": "Assemblage",
+      "tier": 1,
+      "description": "Exhaust: At any time, re-roll a roll you made or that was made against you. Limited by your highest Lvl Assemblage Discipline. LVL 1+: Dodge rolls or Skill Check rolls. LVL 2+: Spell Casting rolls. LVL 3+: Conviction rolls or Attack rolls. LVL 4+: Any rolls"
+    },
+    {
+      "name": "Last Laugh",
+      "discipline": "Assemblage",
+      "tier": 1,
+      "description": "Passive: If you or a Loyal Esper is Defeated, the figure that dealt the Damage is dealt their 2 Conviction Dice worth of Magic DMG. Exhaust: When you or a Loyal Esper is dealt Damage by an opponent, you may deal the source of that Damage 2 Irreducible DMG."
+    },
+    {
+      "name": "Perfect Love",
+      "discipline": "Assemblage",
+      "tier": 1,
+      "description": "Exhaust: Before an ally within SOI would Determine Damage from an Attack made against them, or Resolve the Spell's Effect from a Spell made against them, Redirect to yourself or a Loyal Esper. (\"There is no fear in love.\")"
+    },
+    {
+      "name": "Sanctuary",
+      "discipline": "Assemblage",
+      "tier": 1,
+      "description": "Exhaust: At any time, an ally within SOI may Dodge. (\"Here there is safety.\")"
+    },
+    {
+      "name": "BFF",
+      "discipline": "Assemblage",
+      "tier": 2,
+      "description": "Exhaust: At any time, when making an Attack, you or a Loyal Esper you've Summoned Gains the following: FU: Move 3 spaces without provoking Break Attacks, then make a ATK against a different target."
+    },
+    {
+      "name": "Conduit Summoning",
+      "discipline": "Assemblage",
+      "tier": 2,
+      "description": "Passive: Any time an opponent is Defeated within SOI, Earn their Conduit card. 1 SP: At any time, replace your Adventurer card with a Conduit card that you have Earned. Or, replace your current Conduit with your Adventurer card."
+    },
+    {
+      "name": "Fortune Telling",
+      "discipline": "Assemblage",
+      "tier": 2,
+      "description": "Per Encounter: After a figure within your SOI has rolled for any reason, choose the result of any single die except the Black. (\"Fortune, good night; smile once more, turn thy wheel.\")"
+    },
+    {
+      "name": "Imposed Paradigm",
+      "discipline": "Assemblage",
+      "tier": 2,
+      "description": "Cast a Spell 6. Swap places with the target. (\"A lie told often enough becomes the truth.\")"
+    },
+    {
+      "name": "Possession",
+      "discipline": "Assemblage",
+      "tier": 2,
+      "description": "Exhaust: A Loyal Esper within SOI makes a ATK or you may spend 1 SP and another ally within SOI makes a ATK instead. (\"Let us end this debate! There is such thing as free will, and I shall take yours as my own.\")"
+    },
+    {
+      "name": "Ruination",
+      "discipline": "Assemblage",
+      "tier": 2,
+      "description": "Cast a Spell 6 against up to 2 different opponents within SOI. Reduce the SP cost of this Discipline by 1 if all targets of this Discipline have an Effect. Roll your Casting die, deal Magic DMG equal to the result. (\"Ruin attends the wicked.\")"
+    },
+    {
+      "name": "Summoning",
+      "discipline": "Assemblage",
+      "tier": 2,
+      "description": "Per Encounter: Summon a Loyal Esper within your SOI. Then, Gain 1 Summon token. Passive: At anytime, Discard a Summon token to reduce any non-irreducible Damage being dealt to a Loyal Esper you control by 2."
+    },
+    {
+      "name": "Exalted Summoning",
+      "discipline": "Assemblage",
+      "tier": 3,
+      "description": "Per Encounter: Choose an Exalted Esper and use its Ability within SOI."
+    },
+    {
+      "name": "Friends with Benefits",
+      "discipline": "Assemblage",
+      "tier": 3,
+      "description": "Passive: When you use the Discipline Summoning, Gain 1 additional Summon token. Loyal Espers you Summon Gain +1 Health."
+    },
+    {
+      "name": "Helping Hands",
+      "discipline": "Assemblage",
+      "tier": 3,
+      "description": "Passive: You may equip an additional Consumable and Relic. Exhaust: Move up to 2 spaces. Gain Flight during this movement."
+    },
+    {
+      "name": "Resonance",
+      "discipline": "Assemblage",
+      "tier": 3,
+      "description": "FU: Use an un-flipped Discipline you have learned that costs 1-3 SP. Any Conditions excluding SP cost still apply. This Discipline may target a different figure."
+    },
+    {
+      "name": "The Pessimist",
+      "discipline": "Assemblage",
+      "tier": 3,
+      "description": "Passive: When an opponent within SOI fails a Conviction Check by 3 or more, Inflict Condemn. (\"With the choice of two evils, I'll take both.\")"
+    },
+    {
+      "name": "Felled Afterlife",
+      "discipline": "Assemblage",
+      "tier": 4,
+      "description": "Passive: When an opponent within your SOI is Defeated, this card Gains 1 Energy token. (Limit 2). When determining the Force of a Spell, if you have 2 Energy tokens on this card, Gain +1 to the Force. Per Encounter: Discard 2 Energy tokens from this card to Gain 2 Enslaved Spirits."
+    },
+    {
+      "name": "Soul Bond",
+      "discipline": "Assemblage",
+      "tier": 4,
+      "description": "Passive: When you use the Discipline Summoning, Gain 1 additional Summon token. Whenever a Loyal Esper you Summoned spends SP to make any Action or Ability, they may spend SP that you have available instead of their own. If either you or your Loyal Espers Gain or lose a Positive Effect, you each also Gain or lose that Effect."
+    },
+    {
+      "name": "The Tower Reversed",
+      "discipline": "Assemblage",
+      "tier": 4,
+      "description": "Exhaust: Cast a Spell 6. Deal 3 Magic DMG for each Effect the target has. Then, Inflict Darkness, Disease, and Paralyze."
+    },
+    {
+      "name": "Corrosive Ideal",
+      "discipline": "Cruor",
+      "tier": 1,
+      "description": "Exhaust: Cast a Spell 6. Your target is Inflicted with Poison. (\"A thing is not necessarily true because a man dies for it.\")"
+    },
+    {
+      "name": "Crumbling Time",
+      "discipline": "Cruor",
+      "tier": 1,
+      "description": "Exhaust: Cast a Spell 6. Your target is Inflicted with Wilt. (\"We are Time's subjects and Time bids; be gone.\")"
+    },
+    {
+      "name": "Gore Shot",
+      "discipline": "Cruor",
+      "tier": 1,
+      "description": "Exhaust: Cast a Spell 6. Deal 2 Magic DMG. You may deal yourself 2 Irreducible DMG to deal additional Magic DMG equal to 2x your highest Lvl Cruor Discipline."
+    },
+    {
+      "name": "Imbued Fear",
+      "discipline": "Cruor",
+      "tier": 1,
+      "description": "When making an Attack, this Attack Gains: +2 Physical DMG. FU: Inflict Darkness. FORCE X + DIFFERENCE HIT, where X equals 6 plus the Lvl of your highest Cruor Discipline."
+    },
+    {
+      "name": "Life Tithe",
+      "discipline": "Cruor",
+      "tier": 1,
+      "description": "Exhaust: An opponent within your SOI is dealt Magic DMG equal to your highest Lvl Cruor Discipline. (\"I am part of that power which eternally wills evil and eternally works good.\")"
+    },
+    {
+      "name": "Oxygen Syphon",
+      "discipline": "Cruor",
+      "tier": 1,
+      "description": "Cast a Spell 6 against all opponents within SOI. Inflict Disease. (\"I am a thief of what all men need.\")"
+    },
+    {
+      "name": "To Faust",
+      "discipline": "Cruor",
+      "tier": 1,
+      "description": "Passive: The first time each turn you are dealt 2 or more Damage from a single source, Gain a Vow token. (\"Gain evidence of higher powers by visible acts which everywhere separate life from death.\")"
+    },
+    {
+      "name": "Blood Pact",
+      "discipline": "Cruor",
+      "tier": 2,
+      "description": "Passive: When making an Attack, you may deal yourself Irreducible DMG equal to up to 2x your highest Lvl Cruor Discipline to add the same amount of Physical DMG to your Attack."
+    },
+    {
+      "name": "Blood Toll",
+      "discipline": "Cruor",
+      "tier": 2,
+      "description": "Exhaust: Deal yourself 2 Irreducible DMG and Gain +2 SP. (\"Pleasure without conscience.\")"
+    },
+    {
+      "name": "Bring the Shadows",
+      "discipline": "Cruor",
+      "tier": 2,
+      "description": "Make a Move. During this movement you do not provoke Break Attacks and you may move through opponents with no penalty. You may not increase this movement with SP. Then, cast a Spell 6 against each figure moved through, ignoring SOI and Line of Sight. Roll your Casting die, Deal Magic DMG equal to the result and Inflict Darkness."
+    },
+    {
+      "name": "In Dreams",
+      "discipline": "Cruor",
+      "tier": 2,
+      "description": "Exhaust: When you hit with an Attack or the target of a spell you cast fails their Conviction Check, Gain a Vow token. (\"Hope is a waking dream.\")"
+    },
+    {
+      "name": "Organic Liquify",
+      "discipline": "Cruor",
+      "tier": 2,
+      "description": "Exhaust: Cast a Spell 6. Roll one of your target's Conviction Dice, Deal Magic DMG equal to the result. You may deal yourself 2 Irreducible DMG to deal additional Magic DMG equal to 2x your highest Lvl Cruor Discipline."
+    },
+    {
+      "name": "Root the Mind",
+      "discipline": "Cruor",
+      "tier": 2,
+      "description": "Exhaust: Cast a Spell 6. Your target is Inflicted with Paralyze. (\"To subdue the enemy without fighting is the acme of skill.\")"
+    },
+    {
+      "name": "Soul Steal",
+      "discipline": "Cruor",
+      "tier": 2,
+      "description": "Passive: At the start of your turn, you and an ally within SOI may redistribute any Damage tokens you have between each other. Exhaust: Cast a Spell 6. Deal Magic DMG equal to half your total Damage."
+    },
+    {
+      "name": "In Secret",
+      "discipline": "Cruor",
+      "tier": 3,
+      "description": "Passive, 2 SP: Make a Move. You have Flight for the duration of this movement. Exhaust: Deal yourself 2 Irreducible DMG and Gain a Vow token."
+    },
+    {
+      "name": "Life Grasp",
+      "discipline": "Cruor",
+      "tier": 3,
+      "description": "Exhaust: Cast a Spell 6 against up to 3 different opponents within SOI. Deal Magic DMG equal to the difference rolled on their failed Conviction Checks. After rolling to determine the Force of this Spell, you may deal yourself 6 Irreducible DMG to add +6 to your roll."
+    },
+    {
+      "name": "Sinful Privilege",
+      "discipline": "Cruor",
+      "tier": 3,
+      "description": "Exhaust: When choosing the target of an Attack or Spell, you may instead target an opponent that is adjacent to an Ally with no penalty regardless of Line of Sight or Range. (\"Hear no evil, see no evil, and you will never be invited to a party.\")"
+    },
+    {
+      "name": "Soul Pact",
+      "discipline": "Cruor",
+      "tier": 3,
+      "description": "Passive: While you are Defeated, if the opponent that Defeated you is also Defeated, you may Flip this card to immediately place your figure on the board anywhere within an ally's SOI then Heal equal to half your Maximum HP."
+    },
+    {
+      "name": "Wreched Tether",
+      "discipline": "Cruor",
+      "tier": 3,
+      "description": "Exhaust: Cast a Spell 6 against another figure. The target Gains the Tether Special Effect token. (\"Bad company corrupts good character.\")"
+    },
+    {
+      "name": "Abbadon's Subtlety",
+      "discipline": "Cruor",
+      "tier": 4,
+      "description": "Exhaust: After resolving an Attack or Spell you made, cast a Spell 6. Deal your target Magic DMG equal to the amount of Damage the previous Attack or Spell dealt. After dealing this Damage, end your turn."
+    },
+    {
+      "name": "He Watches",
+      "discipline": "Cruor",
+      "tier": 4,
+      "description": "Passive: Any time you Gain a Vow token, another ally within your SOI without a Vow token may also Gain a Vow token. The first time each turn an ally Gains a Vow token, they may deal themselves 2 Irreducible DMG to gain another Vow token."
+    },
+    {
+      "name": "Ineptitude",
+      "discipline": "Cruor",
+      "tier": 4,
+      "description": "Exhaust: Before an opponent within SOI rolls for any reason, that roll receives -3. (\"A tax on the foolish.\")"
+    },
+    {
+      "name": "Anticipated Attack",
+      "discipline": "Martial",
+      "tier": 1,
+      "description": ""
+    },
+    {
+      "name": "Blade Works",
+      "discipline": "Martial",
+      "tier": 1,
+      "description": "Exhaust: If you have 2 1-handed Weapons equipped, make a ATK. (\"Perfection comes through toil.\")"
+    },
+    {
+      "name": "Chains of Command",
+      "discipline": "Martial",
+      "tier": 1,
+      "description": "Exhaust: When making a ATK, this Attack Gains: Reach 2. FU: Command 3, Force X + Difference Hit. Where X equals 6 plus the Lvl of your highest Martial Discipline."
+    },
+    {
+      "name": "Critical Defense",
+      "discipline": "Martial",
+      "tier": 1,
+      "description": "Passive: At the start of every Encounter, Gain 1 Dodge token. Your Attacks Gain: FU: Gain a Dodge token."
+    },
+    {
+      "name": "Fortuitous Homicide",
+      "discipline": "Martial",
+      "tier": 1,
+      "description": "Counter Exhaust: (\"There are four kinds of homicide: felonious, excusable, justifiable, and praiseworthy.\")"
+    },
+    {
+      "name": "Hammer Helm",
+      "discipline": "Martial",
+      "tier": 1,
+      "description": "Passive: Your Attacks Gain: +1 Physical DMG. When making a ATK, if you have a 2-handed Weapon equipped, you may re-roll any dice in your Combat Dice Pool."
+    },
+    {
+      "name": "Living Bulwark",
+      "discipline": "Martial",
+      "tier": 1,
+      "description": "Per Encounter: At any time, Gain Resistance: Physical DMG until the end of your next turn. In addition, you may Counter for free until the end of your next turn."
+    },
+    {
+      "name": "Blood Rage",
+      "discipline": "Martial",
+      "tier": 2,
+      "description": ""
+    },
+    {
+      "name": "Dead End",
+      "discipline": "Martial",
+      "tier": 2,
+      "description": "Exhaust: Before rolling for a ATK, if you have a 2-handed Weapon equipped, you Gain +X Shield. Where X equals your highest Lvl Martial Discipline."
+    },
+    {
+      "name": "Mage Breaker",
+      "discipline": "Martial",
+      "tier": 2,
+      "description": "Exhaust: When determining Damage, roll the opponent's Casting die and add the number rolled as Physical DMG to this Attack. (\"Your hubris will be your undoing.\")"
+    },
+    {
+      "name": "Onslaught",
+      "discipline": "Martial",
+      "tier": 2,
+      "description": "Make a ATK. This Attack Gains: FU: Make a ATK. The above FU Attack also Gains: FU: Make a ATK."
+    },
+    {
+      "name": "Physically Perfected",
+      "discipline": "Martial",
+      "tier": 2,
+      "description": "Passive: Gain +X Strength. Where X is equal to your highest Lvl Martial Discipline. Exhaust: When making an Attack, this Attack Gains: FU: Gain +1 SP."
+    },
+    {
+      "name": "Promise",
+      "discipline": "Martial",
+      "tier": 2,
+      "description": "Exhaust: Before rolling for a ATK, Gain +X to the Attack roll, where X equals the amount of times you've resolved an Attack against the target this turn."
+    },
+    {
+      "name": "Whirlwind",
+      "discipline": "Martial",
+      "tier": 2,
+      "description": "Make a separate ATK against each figure currently adjacent to you. If your equipped Weapon(s) has Reach, you may spend 1 additional SP to Attack all figures currently within the Reach of the Weapon(s) instead."
+    },
+    {
+      "name": "Bring the Wrath",
+      "discipline": "Martial",
+      "tier": 3,
+      "description": "Passive, 1 SP: When you Defeat an opponent, you may end the current Action and all Abilities. If you do, you may move up to 3 spaces and may make a ATK."
+    },
+    {
+      "name": "Gigas Grip",
+      "discipline": "Martial",
+      "tier": 3,
+      "description": "Passive: This Discipline allows you to equip 2-handed Weapons as if they were 1-handed. Gain Gigas Grip."
+    },
+    {
+      "name": "Morbid Envy",
+      "discipline": "Martial",
+      "tier": 3,
+      "description": "Exhaust: When making an Attack, this Attack Gains +X Physical DMG. Where X equals the current roll on one of your Combat Dice. (\"It is not my intention to be fulsome, but I must confess that I covet your skull.\")"
+    },
+    {
+      "name": "Nemesis Enforcement",
+      "discipline": "Martial",
+      "tier": 3,
+      "description": "Exhaust: An opponent within SOI Gains the Nemesis Special Effect token. (\"Arise, that mine enemies may be destroyed and that they may fly!\")"
+    },
+    {
+      "name": "Relentless Feign",
+      "discipline": "Martial",
+      "tier": 3,
+      "description": "Exhaust: When an Attack targeting you misses, end the current Action and all Abilities. Then, make up to 2 ATKs against your Attacker. When you spend SP to use this Discipline, you may spend up to 2 additional SP to make an additional ATK against the Attacker for each additional SP you spent."
+    },
+    {
+      "name": "Challenge Supreme",
+      "discipline": "Martial",
+      "tier": 4,
+      "description": "Passive: When making an Attack, add +1 to the ATK Roll. When making an Attack, add +1 to the ATK Roll for each additional SP you spend."
+    },
+    {
+      "name": "Master of the Vessel",
+      "discipline": "Martial",
+      "tier": 4,
+      "description": "Exhaust: When making an Attack, Gain a Symbol. In addition, when determining Damage, increase the Damage dealt by Symbol Abilities by +1. (\"Mastery over self leads to mastery over others.\")"
+    },
+    {
+      "name": "Will to Live",
+      "discipline": "Martial",
+      "tier": 4,
+      "description": "Flip: When you receive Damage equal to your remaining HP from an Attack or Spell, instead of being Defeated, end the current Action and all Abilities. Then, remove all Effect tokens, and all Abilities tokens, Special effect tokens, and Ability tokens. Finally, Heal Damage equal to half of your total HP."
+    },
+    {
+      "name": "Aspect",
+      "discipline": "Sanctus",
+      "tier": 1,
+      "description": "Passive: +1 Movement. Movement point cost is not increased by Terrain or allies."
+    },
+    {
+      "name": "Courage Stifle",
+      "discipline": "Sanctus",
+      "tier": 1,
+      "description": "Passive: A single Combat Die of your choice that is printed on an equipped SHIELD or BLUNT Weapon is considered a Spellcasting Upgrade. Cast a SPELL 6. Deal MAGIC DMG equal to 2x your TOTAL ARMOR VALUE."
+    },
+    {
+      "name": "Guardian Angel",
+      "discipline": "Sanctus",
+      "tier": 1,
+      "description": "Per Encounter: At any time, you HEAL equal to half your Maximum HP. (\"Serve me! Manifest a symbol of divine protection and of eternity.\")"
+    },
+    {
+      "name": "Intervention",
+      "discipline": "Sanctus",
+      "tier": 1,
+      "description": "Exhaust: An ally within SOI Gains an Intervention token. Reduce the SP cost of this Discipline by 1 if the target is an ally other than yourself."
+    },
+    {
+      "name": "Magic Armor",
+      "discipline": "Sanctus",
+      "tier": 1,
+      "description": "Exhaust: An ally within SOI Gains Barrier. Reduce the SP cost of this Discipline by 1 if the target is an ally other than yourself. (\"You'll never know what didn't hit you.\")"
+    },
+    {
+      "name": "Mend",
+      "discipline": "Sanctus",
+      "tier": 1,
+      "description": "Per Encounter: Gain 2 Heal tokens. Passive: When these tokens are spent to HEAL an ally other than yourself, Gain +1 SP."
+    },
+    {
+      "name": "Nirvana's Mark",
+      "discipline": "Sanctus",
+      "tier": 1,
+      "description": "Passive: +2 Heal. STATUS: Heal 1."
+    },
+    {
+      "name": "Ascension",
+      "discipline": "Sanctus",
+      "tier": 2,
+      "description": "Passive: You may spend Intervention tokens as if they were SP. Increase the amount of Intervention tokens you can have by +1. Exhaust: Make a MOVE. You have FLIGHT for the duration of this movement."
+    },
+    {
+      "name": "Fervor",
+      "discipline": "Sanctus",
+      "tier": 2,
+      "description": "Cast a SPELL 6. Deal MAGIC DMG equal to your TOTAL ARMOR VALUE. HEAL an ally within SOI equal to half the amount of Damage this Spell dealt. If the target of the HEAL is already at full HP they Gain Barrier instead."
+    },
+    {
+      "name": "From the Grave",
+      "discipline": "Sanctus",
+      "tier": 2,
+      "description": "Per Encounter: Place a Defeated ally within SOI, then they HEAL equal to half their Maximum HP. (\"It is not more surprising to be born twice than once.\")"
+    },
+    {
+      "name": "Paradigm Assault",
+      "discipline": "Sanctus",
+      "tier": 2,
+      "description": "Exhaust: When you hit with an Attack, an Ally within SOI Gains Haste, Barrier or Courage. (\"If you're afraid of the dark, you haven't seen what the light can do.\")"
+    },
+    {
+      "name": "Proof of Divinity",
+      "discipline": "Sanctus",
+      "tier": 2,
+      "description": "Exhaust: An ally within SOI Gains Courage. Passive: The first time each round another ally with Courage deals Damage, Gain +1 SP."
+    },
+    {
+      "name": "Salvation",
+      "discipline": "Sanctus",
+      "tier": 2,
+      "description": "Passive: At the start of an Encounter, pick a Negative Effect and place its token on this card. For the duration of this Encounter you are Immune to this Effect. When using the Mend Discipline you Gain +1 Heal Token."
+    },
+    {
+      "name": "Soul Clear",
+      "discipline": "Sanctus",
+      "tier": 2,
+      "description": "Exhaust: Remove an Effect from a figure within SOI. Reduce the SP cost of this Discipline by 1 if the target is an ally other than yourself."
+    },
+    {
+      "name": "Font of Renewal",
+      "discipline": "Sanctus",
+      "tier": 3,
+      "description": "Per Encounter: Place the Font of Renewal Terrain token on Normal Terrain spaces so that at least 1 space is within SOI. Then, place Energy Tokens on the Font of Renewal equal to your highest LVL Sanctus discipline."
+    },
+    {
+      "name": "Greater Existence",
+      "discipline": "Sanctus",
+      "tier": 3,
+      "description": "Passive: When making a Dodge, you may roll your Dodge twice and use either result. If you use this Ability you may not re-roll this Dodge roll. Exhaust: At any time, another ally within SOI may DODGE."
+    },
+    {
+      "name": "Invincibility",
+      "discipline": "Sanctus",
+      "tier": 3,
+      "description": "Exhaust: When another ally within SOI would be Defeated by an opponent, they are not Defeated. Instead, they HEAL: 2 PURPLE. You are dealt IRREDUCIBLE DMG equal to the amount Healed."
+    },
+    {
+      "name": "Wings Manifest",
+      "discipline": "Sanctus",
+      "tier": 3,
+      "description": "Exhaust: Move an ally within SOI up to 4 spaces. This ally has FLIGHT for the duration of this movement."
+    },
+    {
+      "name": "Zealous Reprisal",
+      "discipline": "Sanctus",
+      "tier": 3,
+      "description": "Exhaust: Cast a SPELL 6. Deal MAGIC DMG equal to the result of a roll made with your equipped Combat Dice. Then, PUSH 3. For each space away beyond adjacent the target is, reduce the Push and Damage dealt by this Spell by 1. Reduce the SP cost of this Spell by 2 if you've dealt the target Damage this turn."
+    },
+    {
+      "name": "Dimension Shift",
+      "discipline": "Sanctus",
+      "tier": 4,
+      "description": "Exhaust: Cast a SPELL 6. Deal MAGIC DMG equal to the result of a roll made with one of your equipped Combat Dice. If this deals Damage equal to half or more of the target's current HP, they are Defeated. Then WARP to a space they occupied and Gain +1 SP or Un-Exhaust this card this turn."
+    },
+    {
+      "name": "Inspiration",
+      "discipline": "Sanctus",
+      "tier": 4,
+      "description": "Passive: When an ally within your SOI ends their turn with 0 SP, they immediately Gain +1 SP. When using the Mend Discipline, you Gain +1 Heal Token. (\"Any excuse, no matter how valid, only weakens the character.\")"
+    },
+    {
+      "name": "The Only Truth",
+      "discipline": "Sanctus",
+      "tier": 4,
+      "description": "Passive: Increase the amount of Intervention tokens you can have by +1. Per Encounter: All allies within SOI Gain an Intervention token."
+    },
+    {
+      "name": "Follow Through",
+      "discipline": "Subterfuge",
+      "tier": 1,
+      "description": "Passive: When determining Damage, you may spend SP. For each SP you spend, add +2 Physical DMG to your Attack. Exhaust: When making an Attack, if you have 2 Light Weapons equipped while Flanking, this Attack ignores Armor."
+    },
+    {
+      "name": "Kill the Messenger",
+      "discipline": "Subterfuge",
+      "tier": 1,
+      "description": "Exhaust: If you have a 2-handed Weapon equipped, when making an Attack, if you roll the lowest result on a Combat Dice, you may change a single die to the highest result instead. This Ability does not interact with the Black die."
+    },
+    {
+      "name": "Like the Shadows",
+      "discipline": "Subterfuge",
+      "tier": 1,
+      "description": "Exhaust: Move up to 2 spaces. This movement does not provoke Break Attacks. (\"Improve upon the silence.\")"
+    },
+    {
+      "name": "Murder Circus",
+      "discipline": "Subterfuge",
+      "tier": 1,
+      "description": "Per Encounter: Throw: X Purple, where X equals your highest LVL Subterfuge Discipline. Assign these dice to up to X targets. All dice assigned to a single target count as a single source of Damage and are rolled together."
+    },
+    {
+      "name": "Shame of the Otaku",
+      "discipline": "Subterfuge",
+      "tier": 1,
+      "description": "Per Encounter: When you are the target of an Attack, after determining if the Attack hit, but before determining Damage, the Attack misses. Then, Warp to any unoccupied space within SOI and Counter."
+    },
+    {
+      "name": "Speed Injustice",
+      "discipline": "Subterfuge",
+      "tier": 1,
+      "description": "Dodge (Exhaust): So long as you did not roll Skull, you may re-roll this Dodge roll. (\"If eye for an eye leaves us all blind, then so be it, for justice is blind already.\")"
+    },
+    {
+      "name": "Trick Shot",
+      "discipline": "Subterfuge",
+      "tier": 1,
+      "description": "Exhaust: If you have 2 1-handed Weapons equipped, make this Attack. Before rolling for this Attack, you may Gain -1 to the Attack Roll and +3 Physical DMG. (\"There is no truth. There is only perception.\")"
+    },
+    {
+      "name": "BladeDistortion",
+      "discipline": "Subterfuge",
+      "tier": 2,
+      "description": "Exhaust: Before rolling for an Attack. This Attack cannot be Dodged or Countered. (\"To destroy the reasons for living, for the sake of Life.\")"
+    },
+    {
+      "name": "C.Q.C.",
+      "discipline": "Subterfuge",
+      "tier": 2,
+      "description": "Exhaust: When making an Attack with 2 1-handed Weapons, the Attack Gains +4 Physical DMG if made at Range 1, +3 at Range 2, +2 at Range 3, +1 at Range 4, and Range 2. FU: Move up to 2 spaces. This movement does not provoke Break Attacks."
+    },
+    {
+      "name": "Down the Masses",
+      "discipline": "Subterfuge",
+      "tier": 2,
+      "description": "Exhaust: Make up to 2 Attacks against different targets. (\"All murderers are punished unless they kill in large numbers and to the sound of trumpets.\")"
+    },
+    {
+      "name": "False Idol",
+      "discipline": "Subterfuge",
+      "tier": 2,
+      "description": "Exhaust: Make an Attack. This Attack has -1 to the Attack Roll. (\"It is easier to fool people, than to convince them they have been fooled.\")"
+    },
+    {
+      "name": "Friend over Foe",
+      "discipline": "Subterfuge",
+      "tier": 2,
+      "description": "Exhaust: Dodge. Exhaust: Another ally may make an Attack against an opponent you Attacked this turn."
+    },
+    {
+      "name": "Overwatch",
+      "discipline": "Subterfuge",
+      "tier": 2,
+      "description": "Exhaust: At any time, gain Provoke X until the end of turn, where X equals one of your equipped Weapons' Range. If you have a Weapon equipped, this Break Attack may be provoked by figures with Flight."
+    },
+    {
+      "name": "Quick Blow",
+      "discipline": "Subterfuge",
+      "tier": 2,
+      "description": "During the Follow Up step of your Attack, other than your Attack made with Quick Blow, make another Attack. You may choose a new target for this Attack. (\"Lightning shall be slow to my hasting.\")"
+    },
+    {
+      "name": "Jack of all Blades",
+      "discipline": "Subterfuge",
+      "tier": 3,
+      "description": "Passive: So long as you have a 1-handed Weapon with Light equipped, your other equipped weapon Gains Light. You treat Obstructing Terrain and the edges of Encounters as an ally for the purposes of Flanking."
+    },
+    {
+      "name": "Ninjutsu",
+      "discipline": "Subterfuge",
+      "tier": 3,
+      "description": "Passive: Gain +1 to Attack Rolls. If another Ability, other than those on Armor or Cores, passively adds to your Attack Roll, do not Gain this bonus. Dodge (Exhaust)."
+    },
+    {
+      "name": "Precise Strike",
+      "discipline": "Subterfuge",
+      "tier": 3,
+      "description": "Exhaust: If you have a 2-handed Weapon equipped, make an Attack. This Attack Gains +2 to your normal Range Value. If this Attack roll is at least 4 higher than the target's Defense (including any Defense added from Abilities), this Attack Gains +5 Irreducible DMG."
+    },
+    {
+      "name": "Profound Intuition",
+      "discipline": "Subterfuge",
+      "tier": 3,
+      "description": "Exhaust: When you successfully Dodge, end the current Action and all Abilities. Then, move up to 3 spaces and make an Attack. This movement does not provoke Break Attacks."
+    },
+    {
+      "name": "Rapid Reload",
+      "discipline": "Subterfuge",
+      "tier": 3,
+      "description": "Exhaust: Make an Attack with 2 1-handed Weapons or a Weapon with the Gun tag. FU: Add 1 Energy token to this card (Limit 2). Energy tokens on this card may be spent as though they were SP."
+    },
+    {
+      "name": "Blot out the Sun",
+      "discipline": "Subterfuge",
+      "tier": 4,
+      "description": "Exhaust: Make an Attack. After resolving this Attack, roll one of your equipped Combat Dice and deal X Physical DMG, where X is the number rolled, to your target and each adjacent figure to the target of the Attack, ignoring Range and Line of Sight."
+    },
+    {
+      "name": "Brutal Slaughter",
+      "discipline": "Subterfuge",
+      "tier": 4,
+      "description": "Passive: Until the end of the turn, when you hit with an Attack, Gain +X Physical DMG, where X is the number of times you hit with an Attack this turn. Reduce this bonus to 0 at the end of the turn, or if you miss with an Attack. (\"From Hell's heart I stab at thee!\")"
+    },
+    {
+      "name": "Fist of Polaris",
+      "discipline": "Subterfuge",
+      "tier": 4,
+      "description": "Passive: You may pay 1 SP to Un-exhaust this card. Exhaust: If an opponent is adjacent to you, Warp to any adjacent space to that opponent. Then, make an Attack against an opponent you have not Attacked this turn."
+    }
+  ],
+  "espers": [
+    {
+      "name": "Abimelech",
+      "type": "Exalted Esper",
+      "notes": ""
+    },
+    {
+      "name": "Lo & Palden",
+      "type": "Exalted Esper",
+      "notes": ""
+    },
+    {
+      "name": "Guardians of Impermanence",
+      "type": "Exalted Esper",
+      "notes": ""
+    },
+    {
+      "name": "Minos the Contractor",
+      "type": "Exalted Esper",
+      "notes": ""
+    },
+    {
+      "name": "Animism",
+      "type": "Familiar",
+      "notes": ""
+    },
+    {
+      "name": "Tatva",
+      "type": "Familiar",
+      "notes": ""
+    },
+    {
+      "name": "TristramSpirit",
+      "type": "Familiar",
+      "notes": ""
+    },
+    {
+      "name": "Yuxa",
+      "type": "Familiar",
+      "notes": ""
+    },
+    {
+      "name": "Enslaved Spirit",
+      "type": "Loyal Esper",
+      "notes": "Command tile (Tier 7/8). Passive: An Old Soul - The Enslaved Spirit is brought to the board by using the Discipline Felled Afterlife. The Adventurer who controls the Enslaved Spirit's may have 2 Enslaved Spirits on the board at the same time. Ephemeral - If the Enslaved Spirit ever takes Damage, they are Defeated. Ghostly Mass - The Enslaved Spirit has Flight, Protection, and Incorporeal. 0 Mage Breaker (Exhaust): When making an Attack, roll the opponent's Casting die and add the number rolled as Physical DMG. 1 Mourning Remnant: Cast a Spell 6. Inflict Wilt. 2 Euthanasia: Cast a Spell 6. Inflict Wilt and deal 4 Magic DMG. Then, if the target was already Inflicted with Wilt, Inflict Condemn. If they were already Inflicted with both Condemn and Wilt, roll the Black die - if Skull is rolled, the target is Defeated. 2 Ghostly Touch (ATK). Equip bonus: +1 Magic DMG (Book), +2 Magic DMG (Star). Stats: Presence 6, Lore 6, Agility 1, Perception 1, Strength 4, Health *, Defense *, Movement 6, Armor 0, Combat Dice: 2. Conviction: 2 White. Casting: 1 White."
+    },
+    {
+      "name": "Agares",
+      "type": "Loyal Esper",
+      "notes": "Command tile. Celestial Gigas. Passive: Hallowed Hide - Agares has Flight, Colossal, and Protection. 1 Morbid Envy (Exhaust): When making an Attack, this Attack Gains +X Physical DMG, where X equals the current roll on one of Agares' Combat Dice. 1 Holy Strike (Exhaust): Cast a Spell 6 against up to two different targets. Deal Magic DMG equal to 2X his Summoner's total amount of Disciplines. 1 Celestial Infusion (Exhaust): When making an Attack, if this Attack would roll lower than the target's Defense, add a Purple die to Agares' Combat Dice Pool and recalculate. 2 Gigantic Punch (ATK): FU: Push 3, Force (Star) + Difference Hit. 2 Horn Energy Blast (6 ATK, Ranged): FU: Pull 3, Force (Star) + Difference Hit. Equip bonus: +1 Magic DMG (Book). Stats: Presence 6, Lore 4, Agility 1, Perception 1, Strength 6, Health *, Defense *, Movement 4, Armor 4, Combat Dice: 2. Conviction: 2 White. Casting: 1 White."
+    },
+    {
+      "name": "Femke",
+      "type": "Loyal Esper",
+      "notes": "Command tile. Twin Sivani (Fragile). Passive: Everything You Want - When Summoning Femke, the summoner also Summons Diem. The first time each turn Femke would miss with an Attack, re-roll the Attack roll. Best Friends - Femke has Nimble. While both Femke and Diem are on the board, they both Gain Backstab and Resistance: Magic DMG. 0 False Idol (Exhaust): Make an ATK. 0 Timed Evisceration (Exhaust): When making the third or later Attack of a turn, Gain +6 Physical DMG. 0 Vigilant (Exhaust): At any time, Gain Provoke 2 until end of turn. 1 Quick Blow: During the Follow Up step of Femke's Attack, other than an Attack made with Quick Blow, she may make another ATK. Femke may choose a new target for this Attack. 2 Spear of Vel (ATK, Reach 2, Empower). Stats: Presence 2, Lore 2, Agility 6, Perception 4, Strength 2, Health *, Defense *, Movement 6, Armor 0, Combat Dice: 2. Conviction: 2 White. Casting: 1 White."
+    },
+    {
+      "name": "Diem",
+      "type": "Loyal Esper",
+      "notes": "Command tile. Twin Sivani (Fragile). Passive: Everything You Want - When Summoning Diem, the summoner also Summons Femke. The first time each turn Diem would miss with an Attack, re-roll the Attack roll. Best Friends - Diem has Nimble. While both Femke and Diem are on the board, they both Gain Backstab and Resistance: Magic DMG. 0 False Idol (Exhaust): Make an ATK. 0 Resonance (Exhaust): FU: Use Ruination without paying its SP cost. Ruination may target a different figure. 0 Blood Toll (Exhaust): Diem deals herself 2 Irreducible DMG and Gains +2 SP. 2 Ruination: Cast a Spell 6 against up to 2 different opponents within SOI. Reduce the SP cost of this Ability by 1 if all targets have an Effect. Roll Diem's Casting die, deal Magic DMG equal to the result. 2 Spear of Vel (ATK, Reach 2). Stats: Presence 4, Lore 2, Agility 6, Perception 4, Strength 2, Health *, Defense *, Movement 6, Armor 0, Combat Dice: 2. Conviction: 2 White. Casting: 1 die."
+    },
+    {
+      "name": "Eliphie",
+      "type": "Loyal Esper",
+      "notes": "Command tile. Viscera Arimid. Passive: Bag Full of Organs - Eliphie has Nimble. Opponents within Eliphie's SOI have -2 Threat. When Eliphie pays for an ability printed on this card, she may deal herself 2 Irreducible DMG to reduce its SP cost by 1. 0 Gore Shot (Exhaust): Cast a Spell 6. Deal 2 Magic DMG. Eliphie may take 2 Irreducible DMG to deal additional Magic DMG equal to 2X her Summoner's highest LVL Discipline. 1 Blood Barrier (Exhaust): An ally within SOI Gains Barrier. 1 Gore Cleanse (Exhaust): Remove an Effect from a figure within SOI. 2 Invigorate: An ally within SOI Gains a Dodge token. 2 Scalpel (ATK). Equip bonus: +1 Magic DMG (Book), +2 Magic DMG (Star). Stats: Presence 3, Lore 2, Agility 5, Perception 6, Strength 2, Health *, Defense *, Movement 6, Armor 0, Combat Dice: 2. Conviction: 2 White. Casting: 1 White."
+    },
+    {
+      "name": "Zulfiqar",
+      "type": "Loyal Esper",
+      "notes": "Command tile. Spirit Blade. Passive: Phantasmal Sword - Zulfiqar has Flight, Elusive, and Resistance: Physical DMG. The first time each turn Zulfiqar is Attacked, Dodge with +1 Shield. If this Dodge is successful, Zulfiqar may end the current Action and all Abilities. If Zulfiqar does, Zulfiqar may move up to 3 spaces and make an ATK. 0 True Devotion: All adjacent figures to Zulfiqar are dealt 4 Magic DMG. Then, the figure that Spawned Zulfiqar Heals equal to the total Damage dealt by this Ability. Then, Zulfiqar is Defeated. 0 Promise (Exhaust): Before rolling for an Attack, Zulfiqar Gains +X to the ATK Roll, where X equals the amount of times Zulfiqar resolved an Attack against the target this turn. 2 Serrated Edge (ATK). 3 Onslaught (ATK): Make an ATK. This Attack Gains: FU: Make an ATK. The above FU Attack also Gains: FU: Make an ATK. Stats: Presence 2, Lore 6, Agility 4, Perception 3, Strength 3, Health *, Defense *, Movement 4, Armor 0, Combat Dice: 2. Conviction: 2 White. Casting: 1 White."
+    }
+  ],
+  "items": [
+    { "name": "Chain Pick", "slot": "Weapon", "quantity": 1, "rarity": "Uncommon", "notes": "140g. Exotic / Kusarigama / Heavy / Double. Dice: White, Green, Green. Hands: 2. Attack type: Melee. Passive: The first time each turn you provoke a Break Attack, you may Counter. Exhaust: FU: If it is your turn, Move up to 2 spaces without provoking Break Attacks. Then, Flip this card and make a ATK. Equip bonus: +3 Physical DMG (2-Shield icon), +3 Physical DMG (Star icon)." },
+    { "name": "Blue Stone Boomer", "slot": "Weapon", "quantity": 2, "rarity": "Uncommon", "notes": "100g. Gun / Flintlock. Dice: Red. Hands: 1. Range 4 (Ranged). Passive: If your paired Weapon doesn't have Finesse: Green, Gain Finesse: Green. When making an attack, Gain the following: When determining the Damage of this Attack, add a Purple die of Physical DMG. After resolving this Attack, you may Re-Equip (during this Re-Equip you may give Consumables to other allies within SOI). When this Attack ends, Flip this card. Equip bonus: +3 Physical DMG (2-Shield), +3 Physical DMG (Star)." },
+    { "name": "Soul Carver", "slot": "Weapon", "quantity": 1, "rarity": "Uncommon", "notes": "140g. Spellcraft / Scythe / Heavy. Dice: White, Red, Green. Hands: 2. Attack type: Melee. Passive: Reach 2. Casting Upgrade: Red. When casting a Spell that targets an opponent, Empower. FU: Inflict Condemn, Force 9 + Difference Hit. Exhaust: At any time, Gain Provoke 2 until end of turn. Equip bonus: +1 Physical DMG (Shield), +3 Magic DMG (Star)." },
+    { "name": "The BFS", "slot": "Weapon", "quantity": 1, "rarity": "Uncommon", "notes": "150g. Sword / Zanbato / Heavy. Dice: White, Teal, Green. Hands: 2. Attack type: Melee. Threat: +1. Passive: 1 SP: When Countering, before making the granted attack, un-exhaust this Card. When adding extra Damage from the below Ability, if you roll a 3, Un-Exhaust this card. Exhaust: When determining the Damage of an Attack, add a Teal die of Physical DMG. While this Card is Exhausted, you may not Re-Equip or Dodge. Equip bonus: +1 Physical DMG (Shield), +3 Physical DMG (Star)." },
+    { "name": "Dweller's Long Sword", "slot": "Weapon", "quantity": 4, "rarity": "Uncommon", "notes": "90g. Sword / Long Sword / Double. Dice: Green. Hands: 1. Attack type: Melee. Combo: Light, Finesse: Grey. Combo: Sword - Your Attacks Gain +1 Physical DMG. Combo: Long Sword - Your Attacks Gain +4 Physical DMG (Star). Equip bonus: +1 Physical DMG (Shield), +3 Physical DMG (Star)." },
+    { "name": "Healer's Hatchet of Honor", "slot": "Weapon", "quantity": 2, "rarity": "Uncommon", "notes": "90g. Axe / Hand Axe. Dice: Green. Hands: 1. Attack type: Melee. Combo: Shield, Axe, Sword. Exhaust: After resolving an Attack you made, if the Attack missed, make a ATK. Exhaust: When you deal Physical DMG to an opponent, Heal 1. Only 1 Healer's Hatchet of Honor may be used per Action or Ability. Per Encounter, Throw: Red. Equip bonus: +1 Physical DMG (Shield), +3 Physical DMG (Star)." },
+    { "name": "Ageless Bulwark", "slot": "Weapon", "quantity": 1, "rarity": "Uncommon", "notes": "90g. Shield / Buckler / Light. Dice: Red. Hands: 1. Attack type: Melee or Ranged. Threat: +1. Passive: 1 SP: Counter. Exhaust: Move 1 space diagonally. Exhaust: Heal 1." },
+    { "name": "Sloan The Great Wall", "slot": "Weapon", "quantity": 1, "rarity": "Uncommon", "notes": "90g. Shield / Medium Shield. Dice: Red. Hands: 1. Attack type: Melee or Ranged. Threat: +1. Combo: Ranged - Exhaust: Empower. Combo: Melee - Finesse: Green. Exhaust: Counter. Exhaust: At any time, another ally within SOI Gains +1 Threat until end of turn." },
+    { "name": "Loche Smasher", "slot": "Weapon", "quantity": 2, "rarity": "Uncommon", "notes": "90g. Blunt / Warhammer. Dice: Green. Hands: 1. Attack type: Melee. Exhaust: Empower. Combo: Warhammer, Shield - Gain +1 Threat and Heavy. This Ability does not stack with another Warhammer. Passive: Your Empowered Attacks Gain +1 Armor Piercing. Equip bonus: +1 Physical DMG (Shield), +3 Physical DMG (Star)." },
+    { "name": "Ball of the Mountain", "slot": "Weapon", "quantity": 2, "rarity": "Uncommon", "notes": "90g. Blunt / Morning Star. Dice: Green. Hands: 1. Attack type: Melee. Combo: Shield, Blunt - Exhaust: When Countering, you may re-roll any of your dice. Exhaust: At any time, Gain Heavy until end of turn. Passive: When you Defeat an opponent, you may end the current Action and all Abilities; then move up to 2 spaces. Equip bonus: +1 Physical DMG (Shield), +3 Physical DMG (Star)." },
+    { "name": "Bone Chipper", "slot": "Weapon", "quantity": 2, "rarity": "Uncommon", "notes": "90g. Exotic / Katar / Light. Dice: Green. Hands: 1. Attack type: Melee. Passive: +2 Armor Piercing. Combo: Light - Backstab. Combo: Exotic, Knife - Exhaust: Gain +X to the ATK Roll, where X equals the amount of times you've Attacked the target this turn. This Ability does not stack with another Bone Chipper. Equip bonus: +1 Physical DMG (Shield), +2 Physical DMG (Star)." },
+    { "name": "Glass Dagger", "slot": "Weapon", "quantity": 2, "rarity": "Uncommon", "notes": "90g. Knife / Thief Dagger / Light. Dice: Red. Hands: 1. Attack type: Melee. Combo: Light - Backstab. Per Encounter, Throw: Red. Passive: When making a Dodge against a ATK, each Book icon rolled deals 1 Magic DMG to your Attacker. Equip bonus: +1 Physical DMG (Shield), +3 Physical DMG (Star)." },
+    { "name": "War Axe of Svaralfar Serenity", "slot": "Weapon", "quantity": 1, "rarity": "Uncommon", "notes": "140g. Axe / War Axe. Dice: Green, Green. Hands: 2. Attack type: Melee. Exhaust: When determining the Damage of an Attack, this Attack Gains: +1 Physical DMG (Book icon); Per Encounter, Gain Haste or Barrier. Equip bonus: +3 Physical DMG (2-Shield), +3 Physical DMG (Star)." },
+    { "name": "Hyde Signature Sledge", "slot": "Weapon", "quantity": 1, "rarity": "Uncommon", "notes": "140g. Blunt / Great Hammer / Heavy. Dice: White, Green, Green. Hands: 2. Attack type: Melee. Exhaust: FU: Spend 1 SP to Push 1 against all adjacent opponents and Inflict Paralyze, Force 9 + Difference Hit. Passive: All allies within SOI Gain +3 Physical DMG during Attacks made against opponents Inflicted with Paralyze. Equip bonus: +3 Physical DMG (2-Shield), +3 Physical DMG (Star)." },
+    { "name": "Mercenary's Halberd", "slot": "Weapon", "quantity": 1, "rarity": "Uncommon", "notes": "140g. Polearm / Halberd. Dice: Green, Green. Hands: 2. Attack type: Melee. Passive: Reach 2. Provoke 2: If you miss with an Attack using this Ability, Exhaust this card. You may not use this Ability until this card is Un-Exhausted. After the end of the last turn of each round, before the end of the round, you may move up to 2 spaces without provoking Break Attacks (once per round). Equip bonus: +1 Physical DMG (Shield), +3 Physical DMG (Star)." },
+    { "name": "Miner's Crossbow", "slot": "Weapon", "quantity": 2, "rarity": "Uncommon", "notes": "90g. Archery / Hand Crossbow. Dice: Red. Hands: 1. Range 4. Passive: When Countering, you may choose any target within Range of your equipped Weapons. If your paired Weapon doesn't have Finesse: Green, Gain Finesse: Green. +1 Armor Piercing. Passive: When making an Attack you may Exhaust an Arrow you have equipped to ignore the penalties of Attacking through allies and Terrain. Equip bonus: +1 Physical DMG (Shield), +3 Physical DMG (Star)." },
+    { "name": "Repeating Crossbow", "slot": "Weapon", "quantity": 1, "rarity": "Uncommon", "notes": "140g. Archery / Crossbow. Dice: Red, Green. Hands: 2. Range 4. Passive: At any time, Exhaust an Arrow you have equipped to Un-Exhaust this card. Exhaust: When determining the Damage of an Attack, Gain +3 Armor Piercing. Exhaust: After resolving an Attack you made, make a ATK against a different target. Equip bonus: +3 Physical DMG (2-Shield), +3 Physical DMG (Star)." },
+    { "name": "Cave Bow", "slot": "Weapon", "quantity": 1, "rarity": "Uncommon", "notes": "140g. Archery / Longbow. Dice: Red, Green. Hands: 2. Range 6. Passive: If you haven't made a Move Action this turn, your Attacks may Gain +1 to the ATK Roll (if you gain this bonus you may not make a Move Action this turn). Gain Immunity: Darkness. Any attack made against an opponent within your SOI that occupies Hindering Terrain ignores the effects of the Terrain in that space. Equip bonus: +1 Physical DMG (Shield), +3 Physical DMG (Star); FU: Move 1 space (Book icons)." },
+    { "name": "Wand of Coiled Fragments", "slot": "Weapon", "quantity": 2, "rarity": "Uncommon", "notes": "90g. Spellcraft / Wand / Double. Dice: Red. Hands: 1. Range 4. Uncommon Weapon. Passive: Casting Upgrade: Red. Per Encounter: Place a Plank token on any space within SOI; this token replaces all Terrain types except Obstructing Terrain. Combo: Wand - Exhaust: When determining the Force of a Spell, roll your Casting die and both of your Conviction dice and choose 1 to use. Equip bonus: +2 Magic DMG (2-Book), +3 Magic DMG (Star)." },
+    { "name": "Evil Doll", "slot": "Weapon", "quantity": 2, "rarity": "Uncommon", "notes": "90g. Spellcraft / Talisman / Light. Dice: Red. Hands: 1. Attack type: Melee or Ranged. Passive: Casting Upgrade: Red. When making an Attack or casting a Spell that targets an opponent, Empower. While Empowering a Spell, when you roll a 4 on the Black die, deal an opponent within SOI 6 Magic DMG. Equip bonus: +2 Magic DMG (2-Book), +3 Magic DMG (Star)." },
+    { "name": "Blooming Tome", "slot": "Weapon", "quantity": 2, "rarity": "Uncommon", "notes": "90g. Spellcraft / Blunt / Tome. Dice: Red. Hands: 1. Attack type: Melee or Ranged. Passive: Casting Upgrade: Red. Flip: After resolving a Spell you cast, so long as that Spell didn't have the Per Encounter or Flip Condition, cast the same Spell again. Exhaust: Roll the Black die; if you roll 3 or more, remove an Effect from an ally within SOI. Equip bonus: +2 Magic DMG (2-Book), +3 Magic DMG (Star)." },
+    { "name": "The Iridescent", "slot": "Weapon", "quantity": 1, "rarity": "Uncommon", "notes": "140g. Spellcraft / Staff. Dice: Green, Red. Hands: 2. Attack type: Melee. Passive: Casting Upgrade: Green. When you fail to affect a target with a Spell, add 1 Energy token to this card (limit 2). Exhaust: When determining the Force of a Spell, you may discard any amount of Energy tokens from this card to add +1 to your roll each. Exhaust: 1 SP: Before the target of one of your Spells makes a Conviction Check, in addition to the effect of the Spell, deal a Green die of Magic DMG. Equip bonus: +1 Magic DMG (Book), +3 Magic DMG (Star)." },
+    { "name": "Blaque Arrows", "slot": "Relic", "quantity": 2, "rarity": "Uncommon", "notes": "90g. Ammo / Arrows. Combo: Archery - When you make an Attack, Gain +2 Armor Piercing. You are limited to having 1 Arrow item equipped. Exhaust: When you make a Ranged Attack, this Attack ignores all Resistances." },
+    { "name": "Badman's Book of Baddies", "slot": "Relic", "quantity": 1, "rarity": "Uncommon", "notes": "95g. Flip: Summon an Esper. Any additional costs listed on the Esper must still be paid." },
+    { "name": "Collar of Ebon Rule", "slot": "Relic", "quantity": 1, "rarity": "Uncommon", "notes": "102g. Passive: If you do not have the Heavy tag, Gain +1 Threat. (\"Every cost must be paid.\")" },
+    { "name": "Divine Belt Buckle of Swag", "slot": "Relic", "quantity": 1, "rarity": "Uncommon", "notes": "84g. Passive: Conviction Upgrade: Teal. Exhaust: After making a Conviction Check, re-roll any of your dice." },
+    { "name": "Fitted Hat of Protection", "slot": "Relic", "quantity": 1, "rarity": "Uncommon", "notes": "100g. Exhaust: At any time, Gain Protection until end of turn. (\"The magic's in the sticker!\")" },
+    { "name": "Necklace of Immortality", "slot": "Relic", "quantity": 1, "rarity": "Uncommon", "notes": "86g. Passive: When you would be Defeated by an opponent, roll the Black die: on a 3, remain in play and Heal 1; on a 4, remain in play and Heal 3." },
+    { "name": "Puff Brand Classy Tobacky", "slot": "Relic", "quantity": 1, "rarity": "Uncommon", "notes": "110g. Tobacco. Passive: Gain Haste. (\"The best brand in Elenia!\" / \"It Gives You Haste!\")" },
+    { "name": "Soothsaying MP3 Player", "slot": "Relic", "quantity": 1, "rarity": "Uncommon", "notes": "109g. +1 Threat. Exhaust: After an opponent within SOI makes a Conviction Check, re-roll their Conviction Check." },
+    { "name": "Valorus Chalice", "slot": "Relic", "quantity": 1, "rarity": "Uncommon", "notes": "80g. Passive: Conviction Upgrade: Teal. Exhaust: 1 SP: Gain Courage. (\"Liquid courage.\")" },
+    { "name": "Wrist Crossbow", "slot": "Relic", "quantity": 1, "rarity": "Uncommon", "notes": "75g. Per Encounter: Make a Green+Red 4 ATK (Ranged); this Attack may only use the symbols listed on this card. Equip bonus: +1 Physical DMG (Shield); FU: Exhaust this card instead of placing a Used token (Star)." },
+    { "name": "Marbas Threads", "slot": "Armor", "quantity": 2, "rarity": "Uncommon", "notes": "100g. Cloth. Threat +0, Health +9, Defense +2, Movement +1. Exhaust: Dodge - If you successfully Dodged the Attack, you may Counter. Passive: When making a Dodge, if you don't roll Skull, add +1 Defense to the result; Ignore the first Break Attack you would provoke each turn; While Flanking, your Attacks Gain +2 Physical DMG." },
+    { "name": "Morbid Leather", "slot": "Armor", "quantity": 2, "rarity": "Uncommon", "notes": "100g. Leather. Threat +1, Health +12, Defense +2. Exhaust: When making a Dodge, so long as you did not roll Skull, you may re-roll your Dodge roll. Passive: Reduce Physical DMG being dealt to you from Attacks by 2; If an Attack you make exceeds an opponent's Defense by more than 2, deal +2 Physical DMG; When you are Attacked by an opponent that you are Flanking, Gain +1 Defense." },
+    { "name": "Brooding Mantle", "slot": "Armor", "quantity": 2, "rarity": "Uncommon", "notes": "105g. Cuirass. Threat +2, Health +6, Defense +2. Per Encounter: When you are dealt Damage from an Attack, ignore all Physical DMG dealt to you. Passive: When you are dealt Damage by an Attack, roll Black die - if Skull is rolled, your Attacker is Inflicted with Wilt." },
+    { "name": "Ancient Fullplate", "slot": "Armor", "quantity": 2, "rarity": "Uncommon", "notes": "110g. Platemail, Heavy. Threat +3, Health +4, Defense +2. Passive: When you are the target of an Attack, even if you are dealt Damage, you may still Counter. Exhaust: When you are dealt Damage, reduce Physical DMG dealt to you by 4." },
+    { "name": "Penumbra Architect", "slot": "Core", "quantity": 2, "rarity": "Uncommon", "notes": "110g. Utility Core. Defense +3. Passive: Conviction Upgrade: Red; When an ally is Defeated, an ally within SOI Gains Haste, Barrier, or Courage. Exhaust: Move 1 space. This movement does not provoke Break Attacks. When making this movement, you may spend 1 SP to move an additional space." },
+    { "name": "The Campaigner", "slot": "Core", "quantity": 2, "rarity": "Uncommon", "notes": "110g. Ability Core. Defense +3. Exhaust: Counter. Exhaust: When you are dealt Damage from an Attack, Gain a Dodge token." },
+    { "name": "The Lonely Mountain", "slot": "Core", "quantity": 2, "rarity": "Uncommon", "notes": "110g. Defensive Core. Defense +3, Health +2. Exhaust: Dodge. Exhaust: At any time, Gain +1 Threat until end of turn." },
+    { "name": "Radiant Septum Ring", "slot": "Core", "quantity": 2, "rarity": "Uncommon", "notes": "115g. Deflection Core. Defense +3. Passive: Conviction Upgrade: Green. Flip: When making a Conviction Check, pass a Conviction Check. Exhaust: 1 SP: When you fail a Conviction Check, deal an opponent within SOI Magic DMG equal the difference by which you failed the Check." },
+    { "name": "Baphomet's Blessing", "slot": "Consumable", "quantity": 2, "rarity": "Uncommon", "notes": "16g. Discard: At any time, re-roll any dice rolled by a figure within SOI. (\"Baphomet has a great health plan.\")" },
+    { "name": "Foaming Clenser", "slot": "Consumable", "quantity": 2, "rarity": "Uncommon", "notes": "14g. Discard: Remove all Effects from a figure within SOI. (\"Creates super viruses 1% at a time!\")" },
+    { "name": "Runed Switchblade", "slot": "Weapon", "quantity": 1, "rarity": "Uncommon", "notes": "135g. Knife / Switchblade / Light. Dice: Green. Hands: 1. Attack type: Melee. Combo: Knife - While there are no other Allies within SOI, your Attacks Gain +2 Physical DMG. If your other Weapon has the Ability Backstab, Gain +4 Physical DMG instead. Passive: Casting Upgrade: Teal. Equip bonus: +1 Physical DMG (Shield), +3 Magic DMG (Star)." },
+    { "name": "Organic Clothes", "slot": "Armor", "quantity": 1, "rarity": "Uncommon", "notes": "90g. Passive: Gain +X Health, where X equals the amount of Disciplines you currently have. (\"This outfit is really growing on me.\")" },
+    { "name": "Etched Console", "slot": "Weapon", "quantity": 1, "rarity": "Uncommon", "notes": "200g. Spellcraft / Console. Dice: Green, Red. Hands: 2. Range 4. Passive: Casting Upgrade: Green. Flip: Learn any available LVL 1 Discipline for free. Remove this Discipline when this card is Un-Flipped or Un-Equipped. Exhaust: Make a Ranged ATK. If this Attack hits, place an Energy token on the target. The next time this figure would make a Conviction Check, Discard this Energy token; the target gets -3 to their roll. Equip bonus: +2 Magic DMG (Shield+Book), +3 Magic DMG (Star)." },
+    { "name": "Swallow of Impugnment", "slot": "Weapon", "quantity": 1, "rarity": "Uncommon", "notes": "200g. Exotic / Swallow. Dice: Green, Green. Hands: 2. Attack type: Melee. Passive: Every third Attack you make each turn costs 1 SP. Exhaust: 1 SP: After Resolving an Attack in which you Defeated an opponent, end the current Action and all Abilities, then move up to 3 spaces. Then, make a ATK. Equip bonus: +1 Physical DMG (Shield), +3 Physical DMG (Star)." },
+    { "name": "Hater's Plate", "slot": "Armor", "quantity": 1, "rarity": "Uncommon", "notes": "110g. Platemail, Heavy. Threat +3, Health +4, Defense +2. Passive: When you are the target of an Attack, even if you are dealt Damage, you may still Counter. Exhaust: When you are dealt Damage, reduce Physical DMG dealt to you by 4. Per Encounter: When you are dealt Damage, reduce Damage dealt to you by the highest value Combatant Loot card drawn this Encounter. (\"Haters gonna hate.\")" },
+    { "name": "Runed Silver Musket", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "265g. Gun / Musket. Dice: Grey, Blue. Hands: 2. Range 6. Passive: When making an attack, Gain the following: +10 Magic DMG; +2 Armor Piercing; FU: Inflict Darkness, Poison, or Disease, Force 10 + Difference Hit. After resolving this Attack, you may Re-Equip. When this Attack ends, Flip this card. Equip bonus: +2 Physical DMG (Shield), +4 Physical DMG (Star)." },
+    { "name": "Inscribed Shotgun", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "265g. Gun / Shotgun. Dice: Grey, Blue, Grey. Hands: 2. Range 4. Passive: Exhaust: At any time, Gain Protection until the end of the turn. When making an attack, Gain +6 Physical DMG (reduce this damage by 2 for each space between you and the target); 1 SP: After resolving this Attack, deal X Physical DMG (X = damage this Attack dealt) to an adjacent figure to the target, ignoring Range and Line of Sight; after resolving this Attack, you may Re-Equip; FU: Push 2, Force 10 + Difference Hit; when this Attack ends, Flip this card. Equip bonus: +1 Physical DMG (Shield), +4 Physical DMG (Star)." },
+    { "name": "Unholy Chains", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "265g. Exotic / Kusarigama / Heavy / Double. Dice: Grey, Blue, Blue, Blue. Hands: 2. Attack type: Melee. Threat +1. Passive: The first time each turn you provoke a Break Attack, you may Counter; Before rolling for an Attack, you may deal yourself up to 3 Irreducible DMG - for each Irreducible DMG dealt, add +2 Physical DMG to your Attack. Exhaust: FU: If it is your turn, Move up to 2 spaces without provoking Break Attacks. Then, Flip this card and make a ATK. Equip bonus: +2 Physical DMG (2-Shield), +4 Physical DMG (Star)." },
+    { "name": "Equalizer", "slot": "Weapon", "quantity": 2, "rarity": "Rare", "notes": "165g. Gun / Flintlock. Dice: Grey. Hands: 1. Range 4. Passive: If your paired Weapon doesn't have Finesse: Blue, Gain Finesse: Blue. When making an Attack, add a Purple die of Physical DMG. After resolving this Attack, you may Re-Equip (first time each round, Gain 1 SP). When this Attack ends, Flip this card. Equip bonus: +2 Physical DMG (Shield), +4 Physical DMG (Star)." },
+    { "name": "Azrael's Harvester", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "265g. Spellcraft / Scythe / Heavy. Dice: Grey, Grey, Blue. Hands: 2. Attack type: Melee. Passive: Reach 2. Casting Upgrade: Grey. When casting a Spell that targets an opponent, Empower. Per Encounter: When a Discipline you control adds an Ability token to a figure or card, add an additional token. Exhaust: At any time, Gain Provoke 2 until end of turn. Equip bonus: +3 Physical DMG (Shield+Book), +4 Magic DMG (Star)." },
+    { "name": "Zanbato of the Damned", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "265g. Sword / Zanbato / Heavy. Dice: Grey, Green, Blue. Hands: 2. Attack type: Melee. Threat +1. Passive: When you deal Damage equal to half or more of your target's remaining HP, Inflict Condemn. 1 SP: When Countering, before making the granted attack, un-exhaust this card. Exhaust: When determining the Damage of an Attack, add a Green die of Physical DMG. While this Card is Exhausted, you may not Re-Equip or Dodge. Equip bonus: +3 Physical DMG (2-Shield), +4 Physical DMG (Star)." },
+    { "name": "Soul Blade of Perpetuity", "slot": "Weapon", "quantity": 2, "rarity": "Rare", "notes": "165g. Sword / Long Sword / Double. Dice: Blue. Hands: 1. Attack type: Melee. Combo: Light - Finesse: Grey; when making an Attack that uses this Ability, Gain +1 to ATK Rolls. Combo: Sword - Your Attacks Gain +1 Physical DMG. Combo: Long Sword - Your Attacks Gain +5 Physical DMG (Star). Equip bonus: +3 Physical DMG (2-Shield), +4 Physical DMG (Star)." },
+    { "name": "Sword of Sorrow", "slot": "Weapon", "quantity": 2, "rarity": "Rare", "notes": "165g. Sword / Short Sword / Light. Dice: Grey. Hands: 1. Attack type: Melee. Exhaust: Move 1 space diagonally. Combo: Light - Exhaust: Re-roll 1 of your Combat Dice; Finesse: Blue. Passive: Adjacent opponents may not Dodge. Equip bonus: +3 Physical DMG (2-Shield), +4 Physical DMG (Star)." },
+    { "name": "The Svalinn", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "165g. Shield / Medium Shield. Dice: Grey. Hands: 1. Attack type: Melee or Ranged. Threat +1, Health +2. Combo: Ranged - Exhaust: Empower. Combo: Melee - Finesse: Blue. Exhaust: Counter. Passive: Any time an ally within SOI Heals from a source with a Discard Condition, they Heal 1. FU: Deal Physical DMG to each figure adjacent to your target equal to the amount of Defense you spent." },
+    { "name": "Bronson's Fixer", "slot": "Weapon", "quantity": 2, "rarity": "Rare", "notes": "165g. Blunt / Warhammer. Dice: Blue. Hands: 1. Attack type: Melee. Exhaust: Empower. Combo: Warhammer, Shield - Gain +1 Threat and Heavy. This Ability does not stack with another Warhammer. Exhaust: When you deal Damage to an opponent with an Attack, place an Energy token on their Combatant card. Each Energy token placed this way Passively adds +1 Physical DMG on Attacks made against that opponent (limit 2). Equip bonus: +3 Physical DMG (2-Shield), +4 Physical DMG (Star)." },
+    { "name": "Gravedigger's Mistress", "slot": "Weapon", "quantity": 2, "rarity": "Rare", "notes": "165g. Blunt / Morning Star. Dice: Blue. Hands: 1. Attack type: Melee. Combo: Shield, Blunt - Exhaust: When Countering, you may re-roll any of your dice. Passive: All Break Attacks made against you get -1 to the ATK Roll. Passive: When you Defeat an opponent, you may end the current Action and all Abilities; then move up to 2 spaces. Equip bonus: +3 Physical DMG (2-Shield), +4 Physical DMG (Star)." },
+    { "name": "Aromon's Punch Dagger", "slot": "Weapon", "quantity": 2, "rarity": "Rare", "notes": "165g. Exotic / Katar / Light. Dice: Blue. Hands: 1. Attack type: Melee. Passive: +2 Armor Piercing. Combo: Light - Backstab. Exhaust: After dealing Damage with an Attack, you may Warp to the space directly opposite of your target, if unoccupied. Equip bonus: +3 Physical DMG (2-Shield), +3 Physical DMG (Star)." },
+    { "name": "Dagger of Ruination", "slot": "Weapon", "quantity": 2, "rarity": "Rare", "notes": "165g. Knife / Thief Dagger / Light. Dice: Grey. Hands: 1. Attack type: Melee. Combo: Light - Backstab. Per Encounter, Throw: Grey. Combo: Knife - Until the end of each turn, every Attack you hit with after the first, Gain +1 to the ATK Roll. Reduce this bonus to 0 at the end of each turn, or if you miss with an Attack. This Ability does not stack with another Dagger of Ruination. Equip bonus: +3 Physical DMG (2-Shield), +4 Physical DMG (Star)." },
+    { "name": "Edge of Madness", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "265g. Axe / War Axe. Dice: Blue, Blue. Hands: 2. Attack type: Melee. Exhaust: When determining the Damage of an Attack, this Weapon Gains +1 Physical DMG (Book icon). Exhaust: 1 SP: Before rolling for an Attack, deal yourself 1 Irreducible DMG to deal additional Physical DMG equal to half the amount of Damage tokens you currently have, rounded down. Equip bonus: +2 Physical DMG (2-Shield), +4 Physical DMG (Star)." },
+    { "name": "Hammer of Evil Similitude", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "265g. Blunt / Great Hammer / Heavy. Dice: Grey, Blue, Blue. Hands: 2. Attack type: Melee. Passive: FU: Spend 1 SP to Push 1 against all adjacent opponents and Inflict Paralyze, Force 10 + Difference Hit. Exhaust: 1 SP: Move up to 4 spaces and make a ATK. Equip bonus: +2 Physical DMG (2-Shield), +4 Physical DMG (Star)." },
+    { "name": "Spectral Banner", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "265g. Polearm / Halberd. Dice: Blue, Blue. Hands: 2. Attack type: Melee. Passive: Reach 2. Provoke 2: If you miss with an Attack using this Ability, Exhaust this card. You may not use this Ability until this card is Un-Exhausted. Exhaust: Before making an Attack, Choose another ally within SOI. You are considered to be Attacking from the space your chosen ally occupies. Equip bonus: +3 Physical DMG (2-Shield), +4 Physical DMG (Star)." },
+    { "name": "Devil's Handshake", "slot": "Weapon", "quantity": 2, "rarity": "Rare", "notes": "165g. Archery / Hand Crossbow. Dice: Grey. Hands: 1. Range 4. Passive: When Countering, you may choose any target within Range of your equipped Weapons. If your paired Weapon doesn't have Finesse: Blue, Gain Finesse: Blue. +1 Armor Piercing. Passive: After resolving an Attack that was made against you, Exhaust an Arrow you have equipped. Deal Physical DMG equal to the Damage you were dealt to any figure within SOI. Equip bonus: +3 Physical DMG (2-Shield), +4 Physical DMG (Star)." },
+    { "name": "The Joy Wrecker", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "265g. Archery / Crossbow. Dice: Grey, Blue. Hands: 2. Range 4. Passive: At any time, Exhaust an Arrow you have equipped to add 1 Energy token to this card (limit 4). Exhaust: When making an Attack, spend Energy tokens on this card; for each Energy token spent, add +2 Physical DMG during this Attack. Adventurers may not use Abilities that re-roll, change, or add to this Attack roll. Exhaust: When determining the Damage of an Attack, Gain +3 Armor Piercing. Equip bonus: +2 Physical DMG (Shield), +4 Physical DMG (Star)." },
+    { "name": "The Subjugator", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "265g. Archery / Longbow. Dice: Grey, Blue. Hands: 2. Range 6. Passive: If you haven't made a Move Action this turn, your Attacks may Gain +1 to the ATK Roll; if you gain this bonus you may not make a Move Action this turn. Exhaust: At any time, if an opponent within Range 6 has 5 or less remaining HP, make a Ranged ATK against that opponent; if this Attack hits, end the Attack - that opponent is Defeated. Equip bonus: +3 Physical DMG (2-Shield), +4 Physical DMG (Star); FU: Move 1 space (2-Book icons)." },
+    { "name": "Wand of Manipulation", "slot": "Weapon", "quantity": 2, "rarity": "Rare", "notes": "165g. Spellcraft / Wand / Double. Dice: Grey. Hands: 1. Range 4. Rare Weapon. Passive: Casting Upgrade: Grey. Combo: Wand - Exhaust: At any time, re-roll a Conviction Check made by an opponent within SOI. Equip bonus: +1 Magic DMG (Book), +4 Magic DMG (Star)." },
+    { "name": "Nightstalker's Trophy", "slot": "Weapon", "quantity": 2, "rarity": "Rare", "notes": "165g. Spellcraft / Talisman / Light. Dice: Grey. Hands: 1. Attack type: Melee or Ranged. Passive: Casting Upgrade: Grey. When making an Attack or casting a Spell that targets an opponent, Empower. Exhaust: After an opponent is affected by a Spell you cast, roll the Black die. Depending on the amount of Book rolled, your opponent is Inflicted with the corresponding Effect: 1-Disease, 2-Wilt, 3-Condemn, 4-Darkness. Equip bonus: +1 Magic DMG (Book), +4 Magic DMG (Star)." },
+    { "name": "The Septaugint", "slot": "Weapon", "quantity": 2, "rarity": "Rare", "notes": "165g. Spellcraft / Blunt / Tome. Dice: Grey. Hands: 1. Attack type: Melee or Ranged. Passive: Casting Upgrade: Grey. All allies within SOI deal +1 Magic DMG when dealing Damage to an opponent. This Ability may stack once with another Septaugint for up to +2 Magic DMG. Flip: After resolving a Spell you cast, so long as that Spell didn't have the Per Encounter or Flip Condition, cast the same Spell again. Equip bonus: +1 Magic DMG (Book), +4 Magic DMG (Star)." },
+    { "name": "Doomcaster", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "265g. Spellcraft / Staff. Dice: Blue, Grey. Hands: 2. Attack type: Melee. Passive: Casting Upgrade: Blue. When you fail to affect a target with a Spell, add 1 Energy token to this card (limit 2). Exhaust: When determining the Force of a Spell, you may Discard any amount of Energy tokens from this card to add +1 to your roll each. Exhaust: 1 SP: Before the target of one of your Spells makes a Conviction Check, in addition to the effect of the Spell, deal a Blue die of Magic DMG. Equip bonus: +3 Magic DMG (2-Book), +4 Magic DMG (Star)." },
+    { "name": "Ghost Arrows", "slot": "Relic", "quantity": 2, "rarity": "Rare", "notes": "160g. Ammo / Arrows. Combo: Archery - When making an Attack, you may ignore the first figure you draw Line of Sight to. You are limited to having 1 Arrow item equipped. Exhaust: When an ally could Counter but doesn't, you may make a Counter instead. This Attack Gains +1 to the ATK Roll. Before making this Counter, you may Re-Equip." },
+    { "name": "Angel Symbols", "slot": "Relic", "quantity": 1, "rarity": "Rare", "notes": "160g. Passive: Conviction Upgrade: Green. 1 SP: At any time, Gain Protection until end of round." },
+    { "name": "Dhampir's Alacrity", "slot": "Relic", "quantity": 1, "rarity": "Rare", "notes": "160g. Exhaust: Dodge. Per Encounter: At the start of the round, re-shuffle the Initiative cards and deal out the Initiative Track again." },
+    { "name": "Amulet of John", "slot": "Relic", "quantity": 1, "rarity": "Rare", "notes": "170g. Health +2. Flip: When you would be Defeated by an opponent, Heal 1 and remain in play. Gain Immunity: Damage until end of turn." },
+    { "name": "Causality Engine", "slot": "Relic", "quantity": 1, "rarity": "Rare", "notes": "170g. Passive: Conviction Upgrade: Green. Flip: Cast a Spell 15 against all non-boss figures within SOI. Deal Magic DMG equal to half their remaining HP rounded down. (\"Creature included!\")" },
+    { "name": "Lorelei's Tainted Gift", "slot": "Relic", "quantity": 1, "rarity": "Rare", "notes": "160g. Passive: When you are dealt Magic DMG, roll the Black die. If Skull is rolled, reduce that Damage to 0. Then, if the source of the Magic DMG was from a Spell, deal 3 Irreducible DMG to the figure that cast the Spell. Exhaust: Dodge." },
+    { "name": "Salvation Umbrella", "slot": "Relic", "quantity": 1, "rarity": "Rare", "notes": "160g. Passive: During the Prepare Phase of each Encounter, pick an Effect and place its token on this card. Gain Immunity to that Effect. Flip: You Heal equal to your Maximum HP." },
+    { "name": "Vape Remedy", "slot": "Relic", "quantity": 1, "rarity": "Rare", "notes": "170g. Passive: Conviction Upgrade: Green. Flip: All allies within SOI Heal 6 and remove all Negative Effects. Flavor: \"Ambrosia e-juice.\"" },
+    { "name": "Etherium Coat", "slot": "Armor", "quantity": 2, "rarity": "Rare", "notes": "195g. Cloth. ATK +0, HP +12, DEF +3, MOV +1. Exhaust: Dodge. If you successfully Dodged the Attack, you may Counter. This Counter has, FU: Move 1 space without provoking Break Attacks. Passive: When making a Dodge, if you don't roll Skull, add +1 Shield to the result." },
+    { "name": "Reinforced Shearling", "slot": "Armor", "quantity": 2, "rarity": "Rare", "notes": "195g. Leather. ATK +1, HP +16, DEF +3. Exhaust: When making a Dodge, so long as you did not roll Skull, you may re-roll your Dodge roll. Passive: Reduce Physical DMG being dealt to you from Attacks by 2. Per Encounter: When you are dealt Damage, reduce Physical DMG dealt to you equal to the amount of Damage tokens you currently have." },
+    { "name": "Carapace of Attunement", "slot": "Armor", "quantity": 2, "rarity": "Rare", "notes": "200g. Cuirass. ATK +2, HP +8, DEF +3. Per Encounter: When you are dealt Damage from an Attack, ignore all Physical DMG dealt to you. Passive: Conviction Upgrade: Green. Flavor: \"Attunement? Attunement!\"" },
+    { "name": "Plate of Superiority", "slot": "Armor", "quantity": 2, "rarity": "Rare", "notes": "205g. Platemail / Heavy. ATK +3, HP +6, DEF +3. Passive: 1 SP: At any time, this Armor Gains Hulking until end of turn. When you are the target of an Attack, even if you are dealt Damage, you may still Counter. Exhaust: When you are dealt Damage, reduce Physical DMG dealt to you by 4." },
+    { "name": "Seraphim Sidekick", "slot": "Core", "quantity": 2, "rarity": "Rare", "notes": "220g. Utility Core. DEF +4. Passive: Conviction Upgrade: Grey. You may Equip an additional Consumable and Relic. Exhaust: Move 1 space. This movement does not provoke Break Attacks. When making this movement, you may spend 1 SP to move an additional space." },
+    { "name": "God Machine*", "slot": "Core", "quantity": 2, "rarity": "Rare", "notes": "220g. Ability Core. DEF +4. Exhaust: Counter. Exhaust: Move up to 3 spaces. This movement has Flight. Flavor: \"*Faith not required.\"" },
+    { "name": "Hardcore Core", "slot": "Core", "quantity": 2, "rarity": "Rare", "notes": "220g. Defensive Core. DEF +4, HP +2. Exhaust: Dodge. Exhaust: At any time, Gain Resistance: Physical DMG until end of turn." },
+    { "name": "Charm of Ash", "slot": "Core", "quantity": 2, "rarity": "Rare", "notes": "220g. Deflection Core. DEF +4. Passive: Conviction Upgrade: Blue. Flip: When making a Conviction Check, pass a Conviction Check. Exhaust: When you are dealt Damage by an opponent, Gain +1 SP." },
+    { "name": "Magic Frag", "slot": "Consumable", "quantity": 2, "rarity": "Rare", "notes": "18g. Explosive. Discard: Choose a space within Range 4. Deal a Blue die of Magic DMG to the figure on the chosen space and figures on all adjacent spaces. Roll separately for each figure affected by this Item. Flavor: \"Holy Hand Grenade was under copyright.\"" },
+    { "name": "Hadrum's Lost Bow", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "320g. Archery / Longbow. Dice: Blue, Blue. Hands: 2. Range: 6. Passive: If you haven't made a Move Action this turn, your Attacks may Gain +1 to the ATK Roll. If you gain this bonus, you may not make a Move Action this turn. When you are dealt Damage from an Attack, place an Energy token on this card (Limit 3). During your turn, you may spend a token on this card to make a Ranged ATK against a figure that has dealt you Damage this Encounter. Equip bonus: +3 Physical DMG (2-Shield), +4 Physical DMG (Star). FU: Move 1 space (2-Book)." },
+    { "name": "Soul Piercer", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "205g. Sword / Saber. Dice: Blue. Hands: 1. Attack type: Melee. Passive: If you do not have the Heavy Tag, Gain +1 ATK. 2 SP: Move up to 2 spaces and make a Melee ATK. If you deal Damage with this Attack, your target is Inflicted with Condemn. Exhaust: Counter. This Counter may be used even if you are dealt Damage by the Attack. Equip bonus: +3 Physical DMG (2-Shield), +1 to the ATK Roll (Star)." },
+    { "name": "Angel Plate", "slot": "Armor", "quantity": 1, "rarity": "Rare", "notes": "205g. Platemail / Heavy. ATK +3, HP +6, DEF +3. Passive: When you are the target of an Attack, even if you are dealt Damage, you may still Counter. If your equipped Weapons do not provide an Armor Value, this Armor Gains +1 ATK. Exhaust: When you are dealt Damage, reduce Physical DMG dealt to you by 4." },
+    { "name": "Virgin's Fearful Oath", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "205g. Shield / Medium Shield. Dice: Blue. Hands: 1. Attack type: Ranged (special). ATK +1, HP +2. Combo: Ranged - Exhaust: Empower. Combo: Melee - Your Attacks Gain +1 to the ATK Roll. Exhaust: Counter. Exhaust: When another figure within SOI is Defeated, Heal 2." },
+    { "name": "Arrie's Lost Greaves", "slot": "Armor", "quantity": 1, "rarity": "Rare", "notes": "165g. Heavy. HP +2. Passive: If your equipped Weapons do not provide an Armor Value, Gain +1 ATK." },
+    { "name": "Ubiquitous Barrier", "slot": "Core", "quantity": 1, "rarity": "Rare", "notes": "220g. Defensive Core. DEF +4, HP +2. Exhaust: Dodge. Exhaust: At any time, re-roll any dice, except the Black die, that you or an ally within SOI rolled." },
+    { "name": "Pathos", "slot": "Weapon", "quantity": 1, "rarity": "Rare", "notes": "320g. Exotic / Swallow. Dice: Blue, Blue. Hands: 2. Attack type: Melee. Exhaust: At the start of a non-boss Combatant's turn, if you are not their only opponent, remove your figure from the board. Once their turn has ended, return your figure to the board. If the space is now occupied, place your figure on an adjacent unoccupied space. Exhaust: 1 SP: After Resolving an Attack in which you Defeated an opponent, end the current Action and all Abilities, then move up to 3 spaces. Then, make a Melee ATK. Equip bonus: +3 Physical DMG (2-Shield), +4 Physical DMG (Star)." },
+    { "name": "Bad-Ass Leather Jacket", "slot": "Armor", "quantity": 2, "rarity": "Mundane", "notes": "15g. Leather. ATK +1, HP +4. Exhaust: When making a Dodge, so long as you did not roll Skull, you may re-roll your Dodge roll. Passive: Reduce Physical DMG dealt to you from Attacks by 2." },
+    { "name": "Occult Shirt", "slot": "Armor", "quantity": 2, "rarity": "Mundane", "notes": "15g. Cloth. ATK +0, HP +3, MOV +1. Exhaust: Dodge. If you successfully Dodged the Attack, you may Counter. Passive: When making a Dodge, if you don't roll Skull, add +1 Shield to the result." },
+    { "name": "Ability Core", "slot": "Core", "quantity": 2, "rarity": "Mundane", "notes": "15g. Ability Core. DEF +1. Exhaust: Counter." },
+    { "name": "Utility Core", "slot": "Core", "quantity": 2, "rarity": "Mundane", "notes": "15g. Utility Core. DEF +1. Passive: Conviction Upgrade: White. Exhaust: Move 1 space. This movement does not provoke Break Attacks. When making this movement, you may spend 1 SP to move an additional space." },
+    { "name": "Defensive Core", "slot": "Core", "quantity": 2, "rarity": "Mundane", "notes": "15g. Defensive Core. DEF +1, HP +2. Exhaust: Dodge." },
+    { "name": "Long Sword", "slot": "Weapon", "quantity": 2, "rarity": "Mundane", "notes": "18g. Sword / Long Sword / Double. Dice: White. Hands: 1. Attack type: Melee. Combo: Light - Finesse: Orange. Combo: Sword - Your Attacks Gain +1 Physical DMG. Combo: Long Sword - Your Attacks Gain +2 Physical DMG (Star). Equip bonus: +2 Physical DMG (2-Shield), +1 Physical DMG (Star)." },
+    { "name": "Short Sword", "slot": "Weapon", "quantity": 2, "rarity": "Mundane", "notes": "18g. Sword / Short Sword / Light. Dice: Purple. Hands: 1. Attack type: Melee. Exhaust: Move 1 space diagonally. Combo: Light - Exhaust: Re-roll 1 of your Combat Dice. Finesse: White. Equip bonus: +2 Physical DMG (2-Shield), +1 Physical DMG (Star)." },
+    { "name": "Magic Talisman", "slot": "Weapon", "quantity": 2, "rarity": "Mundane", "notes": "18g. Spellcraft / Talisman / Light. Dice: Purple. Hands: 1. Attack type: Melee or Ranged. Passive: When making an Attack or casting a Spell that targets an opponent, Empower. Equip bonus: +1 Magic DMG (2-Book), +1 Magic DMG (Star)." },
+    { "name": "Warhammer", "slot": "Weapon", "quantity": 2, "rarity": "Mundane", "notes": "18g. Blunt / Warhammer. Dice: White. Hands: 1. Attack type: Melee. Exhaust: Empower. Combo: Warhammer, Shield - Gain +1 ATK and Heavy. This Ability does not stack with another Warhammer. Equip bonus: +2 Physical DMG (2-Shield), +1 Physical DMG (Star)." },
+    { "name": "War Axe", "slot": "Weapon", "quantity": 1, "rarity": "Mundane", "notes": "30g. Axe / War Axe. Dice: White, White. Hands: 2. Attack type: Melee. Exhaust: When determining the Damage of an Attack, this Attack Gains +1 Physical DMG (Book). Equip bonus: +1 Physical DMG (Shield), +1 Physical DMG (Star)." },
+    { "name": "Throwing Knives", "slot": "Consumable", "quantity": 6, "rarity": "Mundane", "notes": "4g. Thrown. Discard: Throw: Purple die. Flavor: \"Just like a real ninja.\"" },
+    { "name": "Vitality Juice Box", "slot": "Consumable", "quantity": 10, "rarity": "Mundane", "notes": "4g. Potion. Discard: You or an adjacent ally Heals 3 plus 1 per Loot Level beyond Mundane. Flavor: \"A glass bottle is actually a terrible idea.\"" },
+    { "name": "M.F. Fortitude", "slot": "Consumable", "quantity": 1, "rarity": "Mundane", "notes": "2g. Alcohol / Potion. Discard: At any time, Gain +1 SP. Flavor: \"This ain't just fortitude!\"" },
+    { "name": "Magic Balm", "slot": "Consumable", "quantity": 3, "rarity": "Mundane", "notes": "4g. Discard: Remove an Effect from an ally within SOI. Flavor: \"Like the stuff on Earth, but it works.\"" },
+    { "name": "Hyper Energy HP Potion", "slot": "Consumable", "quantity": 4, "rarity": "Mundane", "notes": "6g. Potion. Discard: An ally within SOI Heals 3 and Gains +1 SP. Flavor: \"It has 752mg of caffeine!\"" },
+    { "name": "Bearer of Justice", "slot": "Weapon", "quantity": 1, "rarity": "Mundane", "notes": "50g. Archery / Longbow. Dice: White, Orange. Hands: 2. Range: 6. Passive: If you haven't made a Move Action this turn, your Attacks may Gain +1 to the ATK Roll. If you gain this bonus, you may not make a Move Action this turn. Attacks made against an opponent that dealt Damage to an ally since the end of your last turn Gain +2 Physical DMG. Exhaust: When an opponent within SOI deals 4 or more Damage to an ally, that opponent is Inflicted with Wilt. Equip bonus: +6 Physical DMG (5-Shield), +1 Physical DMG (Star)." },
+    { "name": "Cuirass", "slot": "Armor", "quantity": 2, "rarity": "Mundane", "notes": "20g. Cuirass. ATK +2, HP +2. Per Encounter: When you are dealt Damage from an Attack, ignore all Physical DMG dealt to you." },
+    { "name": "Deflection Core", "slot": "Core", "quantity": 2, "rarity": "Mundane", "notes": "20g. Deflection Core. DEF +1. Passive: Conviction Upgrade: White. Flip: When making a Conviction Check, pass a Conviction Check." },
+    { "name": "Kusarigama", "slot": "Weapon", "quantity": 1, "rarity": "Common", "notes": "60g. Exotic / Kusarigama / Heavy / Double. Dice: White, Teal, Teal. Hands: 2. Attack type: Melee. Passive: The first time each turn you provoke a Break Attack, you may Counter. Passive: FU: If it is your turn, Move up to 2 spaces without provoking Break Attacks. Then, Flip this card. Equip bonus: +1 Physical DMG (Shield), +2 Physical DMG (Star)." },
+    { "name": "Flintlock", "slot": "Weapon", "quantity": 2, "rarity": "Common", "notes": "45g. Gun / Flintlock. Dice: Orange. Hands: 1. Range: 4. Passive: If your paired Weapon doesn't have Finesse: Teal, Gain Finesse: Teal. When making an Attack, Gain the following: When determining the Damage of this Attack, add a Purple die of Physical DMG. After resolving this Attack, you may Re-Equip. When this Attack ends, Flip this card. Equip bonus: +1 Physical DMG (Shield), +2 Physical DMG (Star)." },
+    { "name": "Scythe", "slot": "Weapon", "quantity": 1, "rarity": "Common", "notes": "60g. Spellcraft / Scythe / Heavy. Dice: White, Orange, Teal. Hands: 2. Attack type: Melee. Passive: Reach 2. Casting Upgrade: Orange. When casting a Spell that targets an opponent, Empower. Exhaust: At any time, Gain Provoke 2 until end of turn. Equip bonus: +2 Physical DMG (Shield), +2 Magic DMG (Book), +2 Magic DMG (Star)." },
+    { "name": "Zanbato", "slot": "Weapon", "quantity": 1, "rarity": "Common", "notes": "70g. Sword / Zanbato / Heavy. Dice: White, White, Teal. Hands: 2. Attack type: Melee. ATK +1. Passive: 1 SP: When Countering, before making the granted attack, un-exhaust this Card. Exhaust: When determining the Damage of an Attack, add a White die of Physical DMG. While this Card is Exhausted, you may not Re-Equip or Dodge. Equip bonus: +2 Physical DMG (2-Shield), +2 Physical DMG (Star)." },
+    { "name": "Elenian Edge", "slot": "Weapon", "quantity": 2, "rarity": "Common", "notes": "40g. Sword / Long Sword / Double. Dice: Teal. Hands: 1. Attack type: Melee. Combo: Light - Finesse: Red. Combo: Sword - Your Attacks Gain +1 Physical DMG. Combo: Long Sword - Your Attacks Gain +3 Physical DMG (Star). Equip bonus: +2 Physical DMG (2-Shield), +2 Physical DMG (Star)." },
+    { "name": "Ocean Cleaver", "slot": "Weapon", "quantity": 2, "rarity": "Common", "notes": "40g. Sword / Short Sword / Light. Dice: Orange. Hands: 1. Attack type: Melee. Exhaust: Move 1 space diagonally. Combo: Light - Exhaust: Re-roll 1 of your Combat Dice. Finesse: Teal. Passive: For each adjacent opponent, your Attacks Gain +1 Physical DMG. This Ability does not stack with another Ocean Cleaver. Equip bonus: +2 Physical DMG (2-Shield), +2 Physical DMG (Star)." },
+    { "name": "Ivory Axe of the Isles", "slot": "Weapon", "quantity": 2, "rarity": "Common", "notes": "40g. Axe / Hand Axe. Dice: Teal. Hands: 1. Attack type: Melee. Combo: Shield, Axe, Sword - Exhaust: After resolving an Attack you made, if the Attack missed, make a Melee ATK. Per Encounter: Throw: Orange die. Passive: When you Defeat an opponent, another ally within SOI Gains Courage. Equip bonus: +2 Physical DMG (2-Shield), +2 Physical DMG (Star)." },
+    { "name": "Sailor's Guard", "slot": "Weapon", "rarity": "Common", "notes": "40g. Shield / Buckler / Light. Dice: Orange. Hands: 1. Attack type: Melee or Ranged. ATK +1. Passive: 1 SP: Counter. Exhaust: Move 1 space diagonally. Exhaust: At any time, Gain -1 ATK and +1 DEF until end of turn." },
+    { "name": "Rhamsted Knight's Shield", "slot": "Weapon", "rarity": "Common", "notes": "40g. Shield / Medium Shield. Dice: Orange. Hands: 1. Attack type: Melee or Ranged. DEF +1. Combo: Ranged - Exhaust: Empower. Combo: Melee - Finesse: Teal. Exhaust: Counter. FU: Push 1, Force 8 + Difference Hit. You may make a Break Attack as a result of this Push." },
+    { "name": "Captain's Hammer", "slot": "Weapon", "quantity": 2, "rarity": "Common", "notes": "40g. Blunt / Warhammer. Dice: Teal. Hands: 1. Attack type: Melee. Exhaust: Empower. Combo: Warhammer, Shield - Gain +1 DEF and Heavy. This Ability does not stack with another Warhammer. Passive: When you Defeat an opponent, another ally within SOI Gains Courage. Equip bonus: +2 Physical DMG (2-Shield), +2 Physical DMG (Star)." },
+    { "name": "Figurehead of Rhamsted", "slot": "Weapon", "quantity": 2, "rarity": "Common", "notes": "40g. Blunt / Morning Star. Dice: Teal. Hands: 1. Attack type: Melee. Combo: Shield, Blunt - Exhaust: When Countering, you may re-roll any of your dice. Exhaust: FU: If this Attack dealt 5 or more Damage, Inflict Paralyze, Force 8 + Difference Hit. Passive: When you Defeat an opponent, you may end the current Action and all other Abilities. Then, move up to 2 spaces. Equip bonus: +2 Physical DMG (2-Shield), +2 Physical DMG (Star)." },
+    { "name": "Assassin's Punchdagger", "slot": "Weapon", "quantity": 2, "rarity": "Common", "notes": "40g. Exotic / Katar / Light. Dice: Teal. Hands: 1. Attack type: Melee. Passive: +2 Armor Piercing. Combo: Light - Backstab. Exhaust: When making an Empowered Attack while Flanking, you may re-roll the Black die. Equip bonus: +2 Physical DMG (2-Shield), +1 Physical DMG (Star)." },
+    { "name": "Straight Shiv", "slot": "Weapon", "quantity": 2, "rarity": "Common", "notes": "40g. Knife / Thief Dagger / Light. Dice: Orange. Hands: 1. Attack type: Melee. Combo: Light - Backstab. Per Encounter: Throw: Orange die. Passive: FU: If Backstab was used during this Attack, you may move up to 2 spaces. This movement does not provoke Break Attacks. Equip bonus: +2 Physical DMG (2-Shield), +2 Physical DMG (Star)." },
+    { "name": "Top-Heavy Axe", "slot": "Weapon", "rarity": "Common", "notes": "60g. Axe / War Axe. Dice: Teal, Teal. Hands: 2. Attack type: Melee. Exhaust: When determining the Damage of an Attack, this Attack Gains +1 Physical DMG (Book). Passive: FU: Spend 1 SP to roll the Black die. For each Shield rolled deal the target of this Attack 1 Irreducible DMG. Equip bonus: +1 Physical DMG (Shield), +2 Physical DMG (Star)." },
+    { "name": "Looty Booty Pounder", "slot": "Weapon", "rarity": "Common", "notes": "60g. Blunt / Great Hammer / Heavy. Dice: White, Teal, Teal. Hands: 2. Attack type: Melee. Exhaust: FU: Spend 1 SP to Push 1 against all adjacent opponents and Inflict Paralyze, Force 8 + Difference Hit. Passive: FU: Spend 1 SP to roll the Black die against each figure adjacent to the target of this Attack. For each Shield rolled against them, they are dealt 1 Physical DMG. Equip bonus: +1 Physical DMG (Shield), +2 Physical DMG (Star), +1 Gold (Book x4)." },
+    { "name": "Rhamsted Guard's Poleaxe", "slot": "Weapon", "rarity": "Common", "notes": "60g. Polearm / Halberd. Dice: Teal, Teal. Hands: 2. Attack type: Melee. Passive: Reach 2. Provoke 2: If you miss with an Attack using this Ability, Exhaust this card. You may not use this Ability until this card is Un-Exhausted. Exhaust: FU: Swap places with your target and roll the Black die. Deal 1 Physical DMG per Shield rolled, Force 8 + Difference Hit. Equip bonus: +2 Physical DMG (2-Shield), +2 Physical DMG (Star)." },
+    { "name": "Assassin's Crossbow", "slot": "Weapon", "quantity": 2, "rarity": "Common", "notes": "40g. Archery / Hand Crossbow. Dice: Orange. Hands: 1. Range: 4. Passive: When Countering, you may choose any target within Range of your equipped Weapons. If your paired Weapon doesn't have Finesse: Teal, Gain Finesse: Teal. +1 Armor Piercing. Passive: When opponents are choosing a target, your Initiative card is considered to be at the back of the Initiative Track. Equip bonus: +2 Physical DMG (2-Shield), +2 Physical DMG (Star)." },
+    { "name": "Privateer Crossbow", "slot": "Weapon", "rarity": "Common", "notes": "60g. Archery / Crossbow. Dice: Orange, Teal. Hands: 2. Range: 4. Passive: At any time, Exhaust an Arrow you have equipped to Un-Exhaust this card. Exhaust: When determining the Damage of an Attack, Gain +3 Armor Piercing. Exhaust: A figure within Range 4 is Pulled 4, Force 10. Equip bonus: +1 Physical DMG (Shield), +2 Physical DMG (Star)." },
+    { "name": "Assassin's Longbow", "slot": "Weapon", "rarity": "Common", "notes": "60g. Archery / Longbow. Dice: Orange, Teal. Hands: 2. Range: 6. Passive: If you haven't made a Move Action this turn, your Attacks may Gain +1 to the ATK roll. If you gain this bonus, you may not make a Move Action this turn. While occupying Hindering Terrain, Gain +1 ATK. Equip bonus: +2 Physical DMG (2-Shield), +2 Physical DMG (Star), FU: Move 1 space (2-Book)." },
+    { "name": "Wand of the Depths", "slot": "Weapon", "quantity": 2, "rarity": "Common", "notes": "40g. Spellcraft / Wand / Double. Dice: Orange. Hands: 1. Range: 4. Passive: Casting Upgrade: Orange. Combo: Wand - Exhaust: Place a Water Terrain token on a space within SOI. Exhaust: When determining the Force of a Spell against a target in Water, add +1 to the roll. Equip bonus: +1 Magic DMG (Book), +2 Magic DMG (Star)." },
+    { "name": "Sea Witch Fetish", "slot": "Weapon", "quantity": 2, "rarity": "Common", "notes": "40g. Spellcraft / Talisman / Light. Dice: Orange. Hands: 1. Passive: Casting Upgrade: Orange. When making an Attack or casting a Spell that targets an opponent, Empower. Ignore the Negative Effects of Water Terrain & Currents. When determining the Force of a Spell while you are in Water, add +1 to your roll. Equip bonus: +1 Magic DMG (Book), +2 Magic DMG (Star)." },
+    { "name": "Apocryphal Antiquity", "slot": "Weapon", "quantity": 2, "rarity": "Common", "notes": "40g. Spellcraft / Blunt / Tome. Dice: Orange. Hands: 1. Passive: Casting Upgrade: Orange. Flip: After resolving a Spell you cast, so long as that Spell didn't have the Per Encounter or Flip Condition, cast the same Spell again. Exhaust: When you deal Magic DMG to an opponent, Heal 1. Only 1 Apocryphal Antiquity may be used per Action or Ability. Equip bonus: +1 Magic DMG (Book), +2 Magic DMG (Star)." },
+    { "name": "Inscribed Casting Rod", "slot": "Weapon", "rarity": "Common", "notes": "60g. Spellcraft / Staff. Dice: Teal, Orange. Hands: 2. Attack type: Melee. Passive: Casting Upgrade: Teal. When you fail to affect a target with a Spell, add 1 Energy token to this card (Limit 2). Exhaust: When determining the Force of a Spell, you may Discard any amount of Energy tokens from this card to add +1 to your roll. Exhaust: 1 SP: Before the target of one of your Spells makes a Conviction Check, in addition to the effect of the Spell, deal a Teal die of Magic DMG. Equip bonus: +2 Magic DMG (2-Book), +2 Magic DMG (Star)." },
+    { "name": "Barbed Arrows", "slot": "Relic", "quantity": 2, "rarity": "Common", "notes": "35g. Ammo / Arrows. Combo: Archery - While adjacent to an opponent, ranged weapons you have equipped count as melee for the purpose of flanking. You are limited to having 1 Arrow Item Equipped. Exhaust: When determining the Damage of an Attack, if the damage wasn't reduced by armor, Gain +3 Physical Damage." },
+    { "name": "Balaclava of Baranose", "slot": "Relic", "rarity": "Common", "notes": "35g. Passive: Conviction Upgrade: White. Flip: When you are dealt Damage, ignore half the Physical DMG dealt to you." },
+    { "name": "Bauble of Opulence", "slot": "Relic", "rarity": "Common", "notes": "35g. Passive: Conviction Upgrade: White. Flip: After an opponent has dealt you Damage, they are dealt Magic DMG equal to the Damage they dealt you." },
+    { "name": "Doom Break", "slot": "Relic", "quantity": 2, "rarity": "Common", "notes": "35g. Exhaust: At any time, Gain +1 SP. When you use this Ability, roll the Black die. If a Skull is rolled, Flip this card. \"The sands of time only sink for the weak.\"" },
+    { "name": "Hemlock & Seir", "slot": "Relic", "quantity": 2, "rarity": "Common", "notes": "42g. Passive: So long as another Ability doesn't passively add to your SOI, increase your SOI by +2. \"Even Socrates would like these!\"" },
+    { "name": "Hidden Piercings of Protection", "slot": "Relic", "quantity": 2, "rarity": "Common", "notes": "35g. Per Encounter: At any time, until the start of your next turn, Gain Protection, and Resistance: Physical DMG. \"Where? Anywhere really.\"" },
+    { "name": "Markings of Strength", "slot": "Relic", "quantity": 2, "rarity": "Common", "notes": "40g. SOI +4. \"A moment of pain for an eternity of protection.\"" },
+    { "name": "Ring of Blood", "slot": "Relic", "quantity": 2, "rarity": "Common", "notes": "40g. Exhaust: When you deal Damage to an opponent, Heal 2. \"Save a life, give blood.\"" },
+    { "name": "Shoes of Jordan", "slot": "Relic", "quantity": 2, "rarity": "Common", "notes": "35g. Exhaust: Dodge. When you use this Ability, roll the Black die. If a Skull is rolled, Flip this card." },
+    { "name": "Fortune Cookie", "slot": "Relic", "rarity": "Common", "notes": "40g. Flip: After rolling for any reason, add a White or Purple die. \"How does it know!?\"" },
+    { "name": "Hoodie of Deflection", "slot": "Armor", "quantity": 2, "rarity": "Common", "notes": "50g. Cloth. ATK +0, HP +4 -> +6, DEF +1, MOV +1. Exhaust: Dodge. If you successfully Dodged the Attack, you may Counter. Passive: When making a Dodge, if you don't roll a Skull, add +1 Shield to the result. Reduce Physical DMG dealt to you from Ranged Attacks by 2." },
+    { "name": "Perpetrator's Catsuit", "slot": "Armor", "quantity": 2, "rarity": "Common", "notes": "50g. Leather. ATK +1, HP +8, DEF +1. Exhaust: When making a Dodge, so long as you did not roll a Skull, you may re-roll your Dodge roll. Passive: Reduce Physical DMG being dealt to you from Melee Attacks by 2. Flip: At any time, you cannot be targeted this turn." },
+    { "name": "Barbed Breastplate", "slot": "Armor", "quantity": 2, "rarity": "Common", "notes": "55g. Cuirass. ATK +2, HP +4, DEF +1. Per Encounter: When you are dealt Damage from an Attack, ignore all Physical DMG dealt to you. Exhaust: When an adjacent opponent hits you with an Attack, they are dealt 3 Physical DMG." },
+    { "name": "Ghost Canister", "slot": "Core", "quantity": 2, "rarity": "Common", "notes": "50g. Utility Core. DEF +2. Passive: Conviction Upgrade: Orange. Exhaust: Move 1 space. This movement does not provoke Break Attacks. When making this movement, you may spend 1 SP to move an additional space. Exhaust: When an ally within SOI provokes a Break Attack, they may Dodge." },
+    { "name": "Aligning Machine", "slot": "Core", "quantity": 2, "rarity": "Common", "notes": "50g. Ability Core. DEF +2. Exhaust: Counter. Exhaust: After resolving an Attack you made, if the Attack missed the target, make a Melee ATK against the same target." },
+    { "name": "Gene Tweak", "slot": "Core", "quantity": 2, "rarity": "Common", "notes": "50g. Defensive Core. DEF +2, HP +2. Exhaust: Dodge. Exhaust: When you are dealt Damage, roll the Black die. If a Skull is rolled, reduce Physical DMG to 0." },
+    { "name": "Exquisite Pendant", "slot": "Core", "quantity": 2, "rarity": "Common", "notes": "55g. Deflection Core. DEF +2. Passive: Conviction Upgrade: Teal. Flip: When making a Conviction Check, pass a Conviction Check. Per Encounter: Remove an Effect from an ally within SOI." },
+    { "name": "Demon Voucher", "slot": "Consumable", "quantity": 2, "rarity": "Common", "notes": "10g. Discard: At any time, re-roll any dice rolled by a figure within SOI. \"We aren't always stuck with the hand we are dealt.\"" },
+    { "name": "Auger's Pager", "slot": "Consumable", "quantity": 2, "rarity": "Common", "notes": "10g. Discard: At the start of a round, after dealing Initiative Cards, move any Initiative card to the front or back of the Initiative Track. \"HLP BADDIES 2 REK\"" },
+    { "name": "Hangover Elixer", "slot": "Consumable", "quantity": 2, "rarity": "Common", "notes": "10g. Potion. Discard: Use 1 of your Abilities that costs 3 SP or less. Reduce the SP cost of this Ability to 0 SP. Other Conditions still apply. \"No liver damage, and now no hangovers! What a life!\"" },
+    { "name": "Phase Token", "slot": "Consumable", "quantity": 2, "rarity": "Common", "notes": "10g. Discard: Warp to any unoccupied space within SOI. \"Great for any sticky situation.\"" },
+    { "name": "Magical Leather Dress", "slot": "Armor", "rarity": "Common", "notes": "100g. Leather. ATK +1, HP +8, DEF +1. Exhaust: When making a Dodge, casting a Spell or making a Conviction Check, you may re-roll any of your dice except the Black die (you may re-roll your Dodge roll). Passive: Reduce Physical DMG being dealt to you from Melee Attacks by 2." },
+    { "name": "Nano Robes", "slot": "Armor", "rarity": "Common", "notes": "70g. Exhaust: When making a Conviction Check, re-roll your roll. Per Encounter: When you are the target of an Attack, the Attack misses." },
+    { "name": "Scimitar Swallow", "slot": "Weapon", "rarity": "Common", "notes": "100g. Exotic / Swallow. Dice: Teal, Teal. Hands: 2. Attack type: Melee. Exhaust: After resolving an Attack you made, make a Melee ATK against a different target. Passive: 1 SP: After Resolving an Attack in which you Defeated an opponent, end the current Action and all Abilities, then move up to 3 spaces. Then, make a Melee ATK. Equip bonus: +2 Physical DMG (2-Shield), +2 Physical DMG (Star)." },
+    { "name": "Oversized Club", "slot": "Weapon", "rarity": "Common", "notes": "100g. Exotic / Oversized Club / Heavy. Dice: White, Teal, Teal. Hands: 2. Attack type: Melee. Exhaust: Reach 2. Passive: When making an Attack, if the difference by which you hit is less than your total Strength Value, add a Purple die of Physical DMG. Equip bonus: +2 Physical DMG (2-Shield), FU: Deal 5 Physical DMG to all figures other than yourself who are adjacent to the target of this Attack (4-Star)." },
+    { "name": "Orgone Blade", "slot": "Weapon", "rarity": "Common", "notes": "70g. Sword / Saber. Dice: Teal. Hands: 1. Attack type: Melee. Passive: If you do not have the Heavy Tag, Gain +1 ATK. When an opponent within SOI is Defeated, add 1 Energy token to this card (Limit 4). When making an Attack, these tokens may be spent to add +1 Physical Damage. Exhaust: Counter. This Counter may be used even if you are dealt Damage by the Attack. Equip bonus: +2 Physical DMG (2-Shield), +1 to the ATK roll (Star)." },
+    { "name": "The Problem Solver", "slot": "Weapon", "rarity": "Common", "notes": "70g. Blunt / Tonfa. Dice: Teal. Hands: 1. Attack type: Melee. Passive: Reduce Physical DMG dealt to you from Melee Attacks by 1. Combo: Blunt - Exhaust: Counter. This Counter has, FU: Make a Melee ATK. Equip bonus: +2 Physical DMG (2-Shield), +2 Physical DMG (Star), FU: Move 1 space (2-Book)." },
+    { "name": "Hastened Core", "slot": "Core", "rarity": "Common", "notes": "80g. Ability Core. DEF +2, MOV +2. Flip: Gain Haste." },
+    { "name": "Bottomless Beverage", "slot": "Relic", "rarity": "Uncommon", "notes": "110g. Alcohol / Potion. Per Encounter: An ally within SOI may do 1 of the following: Remove any Effects they have; Make a Ranged ATK; Gain +2 SP." },
+    { "name": "Chained Grimoire of Perdition", "slot": "Weapon", "rarity": "Uncommon", "notes": "135g. Spellcraft / Tome / Heavy. Dice: Red. Hands: 1. Passive: Casting Upgrade: Grey. Flip: After resolving a Spell you cast, so long as that Spell didn't have the Per Encounter or Flip Condition, cast the same Spell again. Exhaust: 1 SP: After a Spell you cast successfully affects an opponent, deal 2 Magic DMG to all figures within SOI. Equip bonus: +1 Magic DMG (2-Book)." },
+    { "name": "Sword of Kladenetz", "slot": "Weapon", "rarity": "Uncommon", "notes": "135g. Sword / Saber. Dice: Green. Hands: 1. Attack type: Melee. Passive: If you do not have the Heavy Tag, Gain +1 ATK. FU: Deal Magic DMG to an opponent adjacent to your target equal to the Damage dealt with this Attack, Force 9 + Difference Hit. Exhaust: Counter. This Counter may be used even if you are dealt Damage by the Attack. Equip bonus: +1 Physical DMG (Shield), +1 to the ATK roll (Star)." },
+    { "name": "Blodtørst", "slot": "Weapon", "quantity": 2, "rarity": "Rare", "notes": "165g. Axe / Hand Axe. Dice: Blue. Hands: 1. Attack type: Melee. Combo: Shield, Axe, Sword - Exhaust: After resolving an Attack you made, if the Attack missed, make a Melee ATK. Exhaust: When you deal Damage to an opponent with an Attack, Gain a Vow token. Per Encounter: Throw: Grey die. Equip bonus: +3 Physical DMG (2-Shield), +4 Physical DMG (Star)." },
+    { "name": "Misery, Bulwark of the Damned", "slot": "Weapon", "rarity": "Rare", "notes": "165g. Shield / Buckler / Light. Dice: White. Hands: 1. Attack type: Melee or Ranged. ATK +1, HP +2. Passive: 1 SP: Counter. Exhaust: Move 1 space diagonally. Exhaust: After making a Conviction check, Deal yourself 1 Irreducible DMG to re-roll any dice." },
+    { "name": "Adrenal Gland", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Adventurer's Pack", "slot": "Accessory", "quantity": 2, "rarity": "", "notes": "" },
+    { "name": "Animate Shard", "slot": "Consumable", "rarity": "", "notes": "" },
+    { "name": "Apotropaic Bracers", "slot": "Relic", "rarity": "Story", "notes": "" },
+    { "name": "Arkallan Halo", "slot": "Relic", "rarity": "Story", "notes": "" },
+    { "name": "Augmented Monocole", "slot": "Core", "rarity": "Story", "notes": "" },
+    { "name": "Best Rice Balls in Elenia", "slot": "Consumable", "rarity": "Uncommon", "notes": "" },
+    { "name": "Blackhand Nightgown", "slot": "Accessory", "rarity": "Story", "notes": "" },
+    { "name": "Blade of Babylon", "slot": "Weapon", "rarity": "Story", "notes": "" },
+    { "name": "Bladed Tail", "slot": "Weapon", "rarity": "", "notes": "" },
+    { "name": "Boneshaker", "slot": "Weapon", "rarity": "Mundane", "notes": "" },
+    { "name": "Book of Theodotion", "slot": "Relic", "rarity": "Story", "notes": "" },
+    { "name": "Bottled Blessing", "slot": "Consumable", "quantity": 4, "rarity": "Mundane", "notes": "" },
+    { "name": "Buckler", "slot": "Weapon", "rarity": "Mundane", "notes": "" },
+    { "name": "Chalice of Manala", "slot": "Relic", "rarity": "Story", "notes": "" },
+    { "name": "Chipped Chitin", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Cloak", "slot": "Accessory", "quantity": 2, "rarity": "", "notes": "" },
+    { "name": "Corpse Lotus", "slot": "Consumable", "rarity": "", "notes": "" },
+    { "name": "Crossbow", "slot": "Weapon", "rarity": "Mundane", "notes": "" },
+    { "name": "Dream Catcher", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Dynamite", "slot": "Consumable", "rarity": "Uncommon", "notes": "" },
+    { "name": "Earth Loa Crystal", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Earth Loa Fragment", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Enchanted Piercings", "slot": "Relic", "quantity": 2, "rarity": "Mundane", "notes": "" },
+    { "name": "Espelancer", "slot": "Weapon", "rarity": "Mundane", "notes": "" },
+    { "name": "Etherium Couture", "slot": "Accessory", "quantity": 2, "rarity": "", "notes": "" },
+    { "name": "Fate Engine", "slot": "Relic", "quantity": 2, "rarity": "Mundane", "notes": "" },
+    { "name": "Fight Drive", "slot": "Relic", "quantity": 2, "rarity": "Mundane", "notes": "" },
+    { "name": "First Piece of the Pontifex", "slot": "Relic", "rarity": "Story", "notes": "" },
+    { "name": "Gage's Collar", "slot": "Relic", "rarity": "Story", "notes": "" },
+    { "name": "Great Hammer", "slot": "Weapon", "rarity": "Mundane", "notes": "" },
+    { "name": "Halberd", "slot": "Weapon", "rarity": "Mundane", "notes": "" },
+    { "name": "Hand Axe", "slot": "Weapon", "quantity": 2, "rarity": "Mundane", "notes": "" },
+    { "name": "Hand Crossbow", "slot": "Weapon", "quantity": 2, "rarity": "Mundane", "notes": "" },
+    { "name": "Heart Box", "slot": "Core", "rarity": "Mundane", "notes": "" },
+    { "name": "Heart of Daedalus", "slot": "Weapon", "rarity": "Story", "notes": "" },
+    { "name": "Helmet & Gauntlets", "slot": "Accessory", "quantity": 2, "rarity": "", "notes": "" },
+    { "name": "Homemade Brooch", "slot": "Core", "rarity": "Story", "notes": "" },
+    { "name": "Hooked Vine", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Ichor Drenched Chain", "slot": "Weapon", "rarity": "", "notes": "" },
+    { "name": "Inherited Contract", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Iridium Dagger", "slot": "Relic", "rarity": "Story", "notes": "" },
+    { "name": "Katar", "slot": "Weapon", "quantity": 2, "rarity": "Mundane", "notes": "" },
+    { "name": "Longbow", "slot": "Weapon", "rarity": "Mundane", "notes": "" },
+    { "name": "Magic Staff", "slot": "Weapon", "rarity": "Mundane", "notes": "" },
+    { "name": "Magic Tome", "slot": "Weapon", "quantity": 2, "rarity": "Mundane", "notes": "" },
+    { "name": "Maw of the Warden", "slot": "Weapon", "rarity": "Story", "notes": "" },
+    { "name": "Medium Shield", "slot": "Weapon", "rarity": "Mundane", "notes": "" },
+    { "name": "Morning Star", "slot": "Weapon", "quantity": 2, "rarity": "Mundane", "notes": "" },
+    { "name": "Oblation's Expiation", "slot": "Armor", "rarity": "", "notes": "" },
+    { "name": "Poppet", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Prismatic Bulb", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Quickened Eye", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Quiver", "slot": "Accessory", "quantity": 2, "rarity": "", "notes": "" },
+    { "name": "Rescindo's Thirst", "slot": "Relic", "rarity": "Story", "notes": "" },
+    { "name": "Runa's Poppet", "slot": "Relic", "rarity": "Story", "notes": "" },
+    { "name": "Scrying Eye", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Second Piece of the Pontifex", "slot": "Relic", "rarity": "Story", "notes": "" },
+    { "name": "Seed Of Rebirth", "slot": "Relic", "rarity": "Story", "notes": "" },
+    { "name": "Sentient Bodysuit", "slot": "Accessory", "rarity": "Mundane", "notes": "" },
+    { "name": "Sickle Shell Charm", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Sickle Venom", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Smoke Bomb", "slot": "Consumable", "quantity": 2, "rarity": "Mundane", "notes": "" },
+    { "name": "Soul Cleaver", "slot": "Weapon", "rarity": "", "notes": "" },
+    { "name": "Swashbuckler's Garb", "slot": "Accessory", "quantity": 2, "rarity": "", "notes": "" },
+    { "name": "Sword of Dominions", "slot": "Weapon", "rarity": "Mundane", "notes": "" },
+    { "name": "Sylphia Undergarment", "slot": "Accessory", "quantity": 2, "rarity": "", "notes": "" },
+    { "name": "Tail Whip", "slot": "Weapon", "rarity": "", "notes": "" },
+    { "name": "The Black Ticket", "slot": "Relic", "rarity": "Story", "notes": "" },
+    { "name": "The Hegemonix", "slot": "Relic", "rarity": "Story", "notes": "" },
+    { "name": "The Idolator", "slot": "Weapon", "rarity": "Story", "notes": "" },
+    { "name": "The Wretched", "slot": "Weapon", "rarity": "Story", "notes": "" },
+    { "name": "Theif Dagger", "slot": "Weapon", "quantity": 2, "rarity": "Mundane", "notes": "" },
+    { "name": "Too Many Belts", "slot": "Accessory", "quantity": 2, "rarity": "", "notes": "" },
+    { "name": "Tormented Shackle", "slot": "Accessory", "rarity": "", "notes": "" },
+    { "name": "True Flight Arrows", "slot": "Relic", "quantity": 2, "rarity": "Mundane", "notes": "" },
+    { "name": "Ubiquitous Plank", "slot": "Consumable", "quantity": 2, "rarity": "Mundane", "notes": "" },
+    { "name": "Viscous Saliva", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Wand of Hindsight", "slot": "Relic", "rarity": "Mundane", "notes": "" },
+    { "name": "Wand of Missiles", "slot": "Weapon", "quantity": 2, "rarity": "Mundane", "notes": "" },
+    { "name": "Warden's Crown", "slot": "Relic", "rarity": "Story", "notes": "" },
+    { "name": "Water Loa Gem", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Water Loa Oil", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Weapon Straps", "slot": "Accessory", "quantity": 2, "rarity": "", "notes": "" },
+    { "name": "Webbed Feet", "slot": "Relic", "rarity": "", "notes": "" },
+    { "name": "Witch's Hat", "slot": "Relic", "rarity": "Story", "notes": "" }
+  ],
+  "characterTemplates": [
+    {
+      "templateName": "Rook Lars",
+      "className": "Adventurer",
+      "health": { "current": 14, "max": 14 },
+      "armor": 0,
+      "defense": 7,
+      "movement": 6,
+      "stamina": 3,
+      "presence": 4,
+      "lore": 5,
+      "agility": 1,
+      "perception": 2,
+      "strength": 6,
+      "conviction": "2 Purple",
+      "casting": "1 Purple",
+      "equipLimitOverrides": { "Consumable": 4 },
+      "notes": "Passive - Grand Physique: Rook's Advancement granted him an unearthly amount of stamina and strength. Rook's unmodified maximum HP is 14. Rook may equip an additional Consumable. Rook ignores the negative to Movement from the first instance of Heavy he has equipped."
+    },
+    {
+      "templateName": "Nightingale Arsen",
+      "className": "Adventurer",
+      "health": { "current": 12, "max": 12 },
+      "armor": 0,
+      "defense": 7,
+      "movement": 6,
+      "stamina": 3,
+      "presence": 6,
+      "lore": 3,
+      "agility": 5,
+      "perception": 2,
+      "strength": 2,
+      "conviction": "2 Purple",
+      "casting": "1 Purple",
+      "notes": "Ambitious (Per Encounter): Nightingale's commanding personality makes her a natural leader. All other allies Gain +1 SP. Nightingale Gains +2 SP."
+    },
+    {
+      "templateName": "Zeke Jeong",
+      "className": "Adventurer",
+      "health": { "current": 12, "max": 12 },
+      "armor": 0,
+      "defense": 7,
+      "movement": 6,
+      "stamina": 3,
+      "presence": 2,
+      "lore": 2,
+      "agility": 4,
+      "perception": 6,
+      "strength": 4,
+      "conviction": "2 Purple",
+      "casting": "1 Purple",
+      "notes": "Passive - Nimble Fighter: Zeke's cautious nature helps him adapt to any situation. Once per turn, so long as he did not roll Skull, Zeke may re-roll his Dodge roll."
+    },
+    {
+      "templateName": "Remi Moretti",
+      "className": "Adventurer",
+      "health": { "current": 12, "max": 12 },
+      "armor": 0,
+      "defense": 7,
+      "movement": 6,
+      "stamina": 3,
+      "presence": 3,
+      "lore": 2,
+      "agility": 6,
+      "perception": 3,
+      "strength": 4,
+      "conviction": "2 Purple",
+      "casting": "1 Purple",
+      "notes": "1 Shady Training (Exhaust): Remi's shady past has given her insight. Move 1 space in any direction (including diagonally). 2 Avian Flight: Remi is gifted with feathered wings that allow her to fly. Make a Move. Remi has Flight for the duration of this movement. This Ability may only be used if Remi has less Damage than half of her total HP."
+    }
+  ]
+}

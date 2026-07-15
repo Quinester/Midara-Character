@@ -8,23 +8,6 @@ const DISCIPLINE_VARS = {
   Subterfuge: '--d-subterfuge',
 };
 
-// Official per-slot equip limits from the Middara rulebook's "Item Limits" box
-// (pg. 24 of the 1.2 Final rulebook): 2 Hands of Weapons, 1 Armor, 1 Core,
-// 1 Accessory, 3 Relics, 3 Consumables. Weapon is tracked here as a simple
-// equipped-item-count cap of 2 (approximating "2 hands") — this doesn't yet
-// distinguish 1-Handed vs 2-Handed weapons, since that isn't tracked per-item
-// in the data yet, so it won't catch two 2-Handed weapons being equipped at
-// once. Any slot not listed here (e.g. "Other") has no limit. Per-character
-// exceptions (e.g. Rook Lars's extra Consumable) live on c.equipLimitOverrides.
-const EQUIP_LIMITS = {
-  Weapon: 2,
-  Armor: 1,
-  Core: 1,
-  Accessory: 1,
-  Relic: 3,
-  Consumable: 3,
-};
-
 // ---------- State ----------
 let characters = [];
 let activeId = null;
@@ -68,9 +51,6 @@ function blankCharacter(name) {
     notes: '',
     esper: blankSummon(),
     familiar: blankSummon(),
-    // Per-character overrides to the default EQUIP_LIMITS (e.g. Rook Lars's
-    // extra Consumable slot: { Consumable: 4 }). Empty by default.
-    equipLimitOverrides: {},
   };
 }
 
@@ -143,9 +123,6 @@ function normalizeLibrary() {
     // more than 1 copy carry an explicit quantity in the seed file, so anything
     // missing/invalid safely defaults to 1 rather than needing every item edited.
     if (typeof it.quantity !== 'number' || it.quantity < 1) it.quantity = 1;
-    // "Unique" is an orthogonal tag, not a rarity tier — an item can be e.g.
-    // Mundane AND Unique at once, so it's tracked as its own boolean.
-    if (typeof it.unique !== 'boolean') it.unique = false;
   });
 }
 
@@ -199,7 +176,6 @@ function normalizeCharacter(c) {
   if (!c.inventory) c.inventory = [];
   c.inventory.forEach((it) => {
     if (typeof it.rarity !== 'string') it.rarity = '';
-    if (typeof it.unique !== 'boolean') it.unique = false;
   });
   if (!c.health) c.health = { current: 10, max: 10 };
   if (typeof c.notes !== 'string') c.notes = '';
@@ -210,7 +186,6 @@ function normalizeCharacter(c) {
   });
   if (typeof c.conviction !== 'string') c.conviction = '';
   if (typeof c.casting !== 'string') c.casting = '';
-  if (!c.equipLimitOverrides || typeof c.equipLimitOverrides !== 'object') c.equipLimitOverrides = {};
 
   ['esper', 'familiar'].forEach((kind) => {
     if (!c[kind]) c[kind] = blankSummon();
@@ -307,27 +282,12 @@ function bindUsageFlagListeners(row, obj, onChange) {
   });
 }
 
-// Clears one usage-tracking field (usedExhaust / usedPerEncounter / usedFlip) across
-// every item, ability, and Familiar/Esper summon ability on a character — used by the
-// New Turn / New Encounter / Restore buttons. Each field is reset independently since
-// they represent different real-world triggers (end of turn vs. end of encounter vs.
-// a Restore effect), matching how they were tracked independently to begin with.
-function resetUsageField(c, field) {
-  const collections = [c.inventory, c.abilities, c.familiar.abilities, c.esper.abilities];
-  collections.forEach((list) => {
-    list.forEach((obj) => {
-      if (obj[field]) obj[field] = false;
-    });
-  });
-}
-
 // ---------- Sheet render ----------
 function renderSheet() {
   const empty = document.getElementById('emptyState');
   const sheet = document.getElementById('characterSheet');
   const c = getActive();
   editingInventoryIdx = null;
-  editingAbilityIdx = null;
 
   if (!c) {
     empty.classList.remove('hidden');
@@ -469,51 +429,9 @@ function renderStatusEffects(c) {
   });
 }
 
-// ---------- Equip limits ----------
-function getEquipLimit(c, slot) {
-  const overrides = c.equipLimitOverrides || {};
-  if (typeof overrides[slot] === 'number') return overrides[slot];
-  return EQUIP_LIMITS[slot]; // undefined for slots with no limit (e.g. "Other")
-}
-
-function countEquippedInSlot(c, slot, excludeItemId) {
-  return c.inventory.filter((it) => it.slot === slot && it.equipped && it.id !== excludeItemId).length;
-}
-
-// Checks whether equipping one more item in `slot` is allowed. Returns true if
-// it's fine (or the slot has no limit); alerts and returns false if it would
-// exceed the limit. `excludeItemId` lets an already-equipped item being edited
-// skip counting itself twice.
-function tryEquip(c, slot, excludeItemId) {
-  const limit = getEquipLimit(c, slot);
-  if (typeof limit !== 'number') return true;
-  const current = countEquippedInSlot(c, slot, excludeItemId);
-  if (current >= limit) {
-    alert(`Can't equip: the limit for ${slot} is ${limit} (already ${current} equipped). The item will be added/saved as not equipped.`);
-    return false;
-  }
-  return true;
-}
-
-function renderEquipSummary(c) {
-  const bar = document.getElementById('equipSummaryBar');
-  if (!bar) return;
-  const slots = ['Weapon', 'Armor', 'Core', 'Accessory', 'Relic', 'Consumable'];
-  bar.innerHTML = slots
-    .map((slot) => {
-      const limit = getEquipLimit(c, slot);
-      if (typeof limit !== 'number') return '';
-      const count = countEquippedInSlot(c, slot);
-      const over = count > limit;
-      return `<span class="equip-chip${over ? ' equip-over' : ''}">${slot} ${count}/${limit}</span>`;
-    })
-    .join('');
-}
-
 let editingInventoryIdx = null;
 
 function renderInventory(c) {
-  renderEquipSummary(c);
   const wrap = document.getElementById('inventoryList');
   wrap.innerHTML = '';
   if (c.inventory.length === 0) {
@@ -525,8 +443,8 @@ function renderInventory(c) {
     row.className = 'list-item';
 
     if (idx === editingInventoryIdx) {
-      const slots = ['Weapon', 'Armor', 'Core', 'Accessory', 'Relic', 'Consumable', 'Other'];
-      const rarities = ['Mundane', 'Common', 'Uncommon', 'Rare', 'Story'];
+      const slots = ['Weapon', 'Armor', 'Core', 'Accessory', 'Consumable', 'Other'];
+      const rarities = ['Mundane', 'Common', 'Uncommon', 'Rare', 'Unique', 'Story'];
       row.innerHTML = `
         <div class="li-main item-form">
           <input type="text" class="edit-item-name" value="${escapeHtml(item.name)}" placeholder="Item name" />
@@ -537,7 +455,6 @@ function renderInventory(c) {
             <option value="" ${!item.rarity ? 'selected' : ''}>No Rarity</option>
             ${rarities.map((r) => `<option ${r === item.rarity ? 'selected' : ''}>${r}</option>`).join('')}
           </select>
-          <label class="checkbox-label"><input type="checkbox" class="edit-item-unique" ${item.unique ? 'checked' : ''} /> Unique</label>
           <label class="checkbox-label"><input type="checkbox" class="edit-item-equipped" ${item.equipped ? 'checked' : ''} /> Equipped</label>
           <input type="text" class="edit-item-notes" value="${escapeHtml(item.notes || '')}" placeholder="Notes (modifiers, qty, etc.)" />
         </div>
@@ -548,14 +465,10 @@ function renderInventory(c) {
       saveBtn.addEventListener('click', () => {
         const name = row.querySelector('.edit-item-name').value.trim();
         if (!name) return;
-        const newSlot = row.querySelector('.edit-item-slot').value;
-        let wantEquipped = row.querySelector('.edit-item-equipped').checked;
-        if (wantEquipped && !tryEquip(c, newSlot, item.id)) wantEquipped = false;
         item.name = name;
-        item.slot = newSlot;
+        item.slot = row.querySelector('.edit-item-slot').value;
         item.rarity = row.querySelector('.edit-item-rarity').value;
-        item.unique = row.querySelector('.edit-item-unique').checked;
-        item.equipped = wantEquipped;
+        item.equipped = row.querySelector('.edit-item-equipped').checked;
         item.notes = row.querySelector('.edit-item-notes').value;
         editingInventoryIdx = null;
         renderInventory(c);
@@ -577,7 +490,7 @@ function renderInventory(c) {
 
     row.innerHTML = `
       <div class="li-main">
-        <div class="li-name">${escapeHtml(item.name)} <span class="li-badge">${escapeHtml(item.slot)}</span> ${item.rarity ? `<span class="li-badge rarity-${escapeHtml(item.rarity.toLowerCase())}">${escapeHtml(item.rarity)}</span>` : ''} ${item.unique ? '<span class="li-badge unique-tag">Unique</span>' : ''} ${item.equipped ? '<span class="li-badge equipped">Equipped</span>' : ''}</div>
+        <div class="li-name">${escapeHtml(item.name)} <span class="li-badge">${escapeHtml(item.slot)}</span> ${item.rarity ? `<span class="li-badge rarity-${escapeHtml(item.rarity.toLowerCase())}">${escapeHtml(item.rarity)}</span>` : ''} ${item.equipped ? '<span class="li-badge equipped">Equipped</span>' : ''}</div>
         ${item.notes ? `<div class="li-sub">${escapeHtml(item.notes)}</div>` : ''}
         ${usageFlagsHtml(item, item.name, item.notes)}
       </div>
@@ -596,7 +509,7 @@ function renderInventory(c) {
     saveBtn.title = 'Save to Library';
     saveBtn.textContent = '📥';
     saveBtn.addEventListener('click', () => {
-      const presetData = { name: item.name, slot: item.slot, rarity: item.rarity || '', unique: !!item.unique, notes: item.notes || '' };
+      const presetData = { name: item.name, slot: item.slot, rarity: item.rarity || '', notes: item.notes || '' };
       const existingIdx = library.items.findIndex(
         (x) => x.name.toLowerCase() === item.name.toLowerCase() && x.slot === item.slot
       );
@@ -662,8 +575,6 @@ function renderDisciplines(c) {
   });
 }
 
-let editingAbilityIdx = null;
-
 function renderAbilities(c) {
   const wrap = document.getElementById('abilityList');
   wrap.innerHTML = '';
@@ -674,47 +585,6 @@ function renderAbilities(c) {
   c.abilities.forEach((ab, idx) => {
     const row = document.createElement('div');
     row.className = 'list-item';
-
-    if (idx === editingAbilityIdx) {
-      row.innerHTML = `
-        <div class="li-main item-form">
-          <input type="text" class="edit-ability-name" value="${escapeHtml(ab.name)}" placeholder="Ability name" />
-          <select class="edit-ability-discipline">
-            ${DISCIPLINES.map((d) => `<option ${d === ab.discipline ? 'selected' : ''}>${d}</option>`).join('')}
-          </select>
-          <input type="number" class="edit-ability-tier" value="${ab.tier || ''}" placeholder="Tier" min="1" style="width:70px" />
-          <label class="checkbox-label"><input type="checkbox" class="edit-ability-learned" ${ab.learned ? 'checked' : ''} /> Learned</label>
-          <input type="text" class="edit-ability-desc" value="${escapeHtml(ab.description || '')}" placeholder="Description / effect" />
-        </div>
-      `;
-      const saveBtn = document.createElement('button');
-      saveBtn.className = 'btn small';
-      saveBtn.textContent = 'Save';
-      saveBtn.addEventListener('click', () => {
-        const name = row.querySelector('.edit-ability-name').value.trim();
-        if (!name) return;
-        ab.name = name;
-        ab.discipline = row.querySelector('.edit-ability-discipline').value;
-        ab.tier = Number(row.querySelector('.edit-ability-tier').value) || null;
-        ab.learned = row.querySelector('.edit-ability-learned').checked;
-        ab.description = row.querySelector('.edit-ability-desc').value;
-        editingAbilityIdx = null;
-        renderAbilities(c);
-        scheduleSave();
-      });
-      const cancelBtn = document.createElement('button');
-      cancelBtn.className = 'btn small';
-      cancelBtn.textContent = 'Cancel';
-      cancelBtn.addEventListener('click', () => {
-        editingAbilityIdx = null;
-        renderAbilities(c);
-      });
-      row.appendChild(saveBtn);
-      row.appendChild(cancelBtn);
-      wrap.appendChild(row);
-      return;
-    }
-
     row.innerHTML = `
       <div class="li-main">
         <div class="li-name">${escapeHtml(ab.name)} <span class="li-badge">${escapeHtml(ab.discipline)}</span> ${ab.tier ? `<span class="li-badge">Tier ${ab.tier}</span>` : ''} ${ab.learned ? '<span class="li-badge learned">Learned</span>' : ''}</div>
@@ -723,14 +593,6 @@ function renderAbilities(c) {
       </div>
     `;
     bindUsageFlagListeners(row, ab, () => scheduleSave());
-    const editBtn = document.createElement('button');
-    editBtn.className = 'save-to-lib-btn';
-    editBtn.title = 'Edit';
-    editBtn.textContent = '✎';
-    editBtn.addEventListener('click', () => {
-      editingAbilityIdx = idx;
-      renderAbilities(c);
-    });
     const saveBtn = document.createElement('button');
     saveBtn.className = 'save-to-lib-btn';
     saveBtn.title = 'Save to Library';
@@ -764,7 +626,6 @@ function renderAbilities(c) {
       renderAbilities(c);
       scheduleSave();
     });
-    row.appendChild(editBtn);
     row.appendChild(saveBtn);
     row.appendChild(removeBtn);
     wrap.appendChild(row);
@@ -802,17 +663,14 @@ function showView(view) {
 }
 
 // ---------- Library selects (on character sheet forms) ----------
-function filterItems(items, slotSelectId, raritySelectId, uniqueCheckboxId) {
+function filterItems(items, slotSelectId, raritySelectId) {
   const slotSelect = document.getElementById(slotSelectId);
   const raritySelect = document.getElementById(raritySelectId);
-  const uniqueCheckbox = uniqueCheckboxId ? document.getElementById(uniqueCheckboxId) : null;
   const filterSlot = slotSelect ? slotSelect.value : '';
   const filterRarity = raritySelect ? raritySelect.value : '';
-  const filterUniqueOnly = uniqueCheckbox ? uniqueCheckbox.checked : false;
   return items.filter((it) => {
     if (filterSlot && it.slot !== filterSlot) return false;
     if (filterRarity && (it.rarity || '') !== filterRarity) return false;
-    if (filterUniqueOnly && !it.unique) return false;
     return true;
   });
 }
@@ -820,33 +678,15 @@ function filterItems(items, slotSelectId, raritySelectId, uniqueCheckboxId) {
 function populateItemLibrarySelect() {
   const select = document.getElementById('itemLibrarySelect');
   const current = select.value;
-  const filtered = filterItems(library.items, 'itemFilterSlot', 'itemFilterRarity', 'itemFilterUnique');
+  const filtered = filterItems(library.items, 'itemFilterSlot', 'itemFilterRarity');
   const inPlayCounts = getInPlayCounts();
-  select.innerHTML = '<option value="">— Pick from Library, adds instantly —</option>' +
+  select.innerHTML = '<option value="">— Pick from Library —</option>' +
     filtered.map((it) => {
       const remaining = getRemainingCount(it, inPlayCounts);
-      return `<option value="${it.id}">${it.unique ? '★ ' : ''}${escapeHtml(it.name)} (${escapeHtml(it.slot)}${it.rarity ? ', ' + escapeHtml(it.rarity) : ''}) — ${remaining} left</option>`;
+      return `<option value="${it.id}">${escapeHtml(it.name)} (${escapeHtml(it.slot)}${it.rarity ? ', ' + escapeHtml(it.rarity) : ''}) — ${remaining} left</option>`;
     }).join('');
   select.value = current;
   if (select.value !== current) select.value = '';
-}
-
-// Adds a library item preset straight into a character's inventory (equipped
-// defaults to false — use the row's ✎ edit button afterward to tweak Equipped/
-// notes/etc). Skips the old "Use → fill form → Add Item" two-step flow.
-function addLibraryItemToInventory(c, libItem) {
-  c.inventory.push({
-    id: uid(),
-    name: libItem.name,
-    slot: libItem.slot,
-    rarity: libItem.rarity || '',
-    unique: !!libItem.unique,
-    equipped: false,
-    notes: libItem.notes || '',
-  });
-  renderInventory(c);
-  populateItemLibrarySelect();
-  scheduleSave();
 }
 
 function populateAbilityLibrarySelect() {
@@ -856,25 +696,8 @@ function populateAbilityLibrarySelect() {
   const filtered = filterDiscipline
     ? library.abilities.filter((a) => a.discipline === filterDiscipline)
     : library.abilities;
-  select.innerHTML = '<option value="">— Pick from Library, adds instantly —</option>' +
+  select.innerHTML = '<option value="">— Pick from Library —</option>' +
     filtered.map((a) => `<option value="${a.id}">${escapeHtml(a.name)}${a.tier ? ' (Tier ' + a.tier + ')' : ''}</option>`).join('');
-}
-
-// Adds a library ability preset straight into a character's ability list (learned
-// defaults to false — toggle it on the row afterward if needed). Skips the old
-// "Use → fill form → Add Ability" two-step flow, same as the item picker.
-function addLibraryAbilityToCharacter(c, libAbility) {
-  c.abilities.push({
-    id: uid(),
-    name: libAbility.name,
-    discipline: libAbility.discipline,
-    tier: libAbility.tier || null,
-    learned: false,
-    description: libAbility.description || '',
-  });
-  renderAbilities(c);
-  populateAbilityLibrarySelect();
-  scheduleSave();
 }
 
 function populateSummonLibrarySelect(kind) {
@@ -938,7 +761,7 @@ function hideModal() {
 function renderLibraryItems() {
   const wrap = document.getElementById('libraryItemList');
   wrap.innerHTML = '';
-  const filtered = filterItems(library.items, 'libItemFilterSlot', 'libItemFilterRarity', 'libItemFilterUnique');
+  const filtered = filterItems(library.items, 'libItemFilterSlot', 'libItemFilterRarity');
   if (library.items.length === 0) {
     wrap.innerHTML = '<div class="muted">No items saved yet.</div>';
     return;
@@ -956,7 +779,7 @@ function renderLibraryItems() {
     row.dataset.itemId = item.id;
     row.innerHTML = `
       <div class="li-main">
-        <div class="li-name">${escapeHtml(item.name)} <span class="li-badge">${escapeHtml(item.slot)}</span> ${item.rarity ? `<span class="li-badge rarity-${escapeHtml(item.rarity.toLowerCase())}">${escapeHtml(item.rarity)}</span>` : ''} ${item.unique ? '<span class="li-badge unique-tag">Unique</span>' : ''} <span class="li-badge">${remaining} / ${item.quantity} left</span></div>
+        <div class="li-name">${escapeHtml(item.name)} <span class="li-badge">${escapeHtml(item.slot)}</span> ${item.rarity ? `<span class="li-badge rarity-${escapeHtml(item.rarity.toLowerCase())}">${escapeHtml(item.rarity)}</span>` : ''} <span class="li-badge">${remaining} / ${item.quantity} left</span></div>
         ${item.notes ? `<div class="li-sub">${escapeHtml(item.notes)}</div>` : ''}
       </div>
     `;
@@ -1198,31 +1021,6 @@ function bindStaticListeners() {
     scheduleSave();
   });
 
-  // Turn/encounter management: clear usage-tracking checkboxes in bulk.
-  document.getElementById('newTurnBtn').addEventListener('click', () => {
-    const c = getActive();
-    if (!c) return;
-    resetUsageField(c, 'usedExhaust');
-    c.stamina = Math.min(5, (c.stamina || 0) + 3);
-    renderSheet();
-    scheduleSave();
-  });
-  document.getElementById('newEncounterBtn').addEventListener('click', () => {
-    const c = getActive();
-    if (!c) return;
-    resetUsageField(c, 'usedPerEncounter');
-    resetUsageField(c, 'usedExhaust');
-    renderSheet();
-    scheduleSave();
-  });
-  document.getElementById('restoreBtn').addEventListener('click', () => {
-    const c = getActive();
-    if (!c) return;
-    resetUsageField(c, 'usedFlip');
-    renderSheet();
-    scheduleSave();
-  });
-
   // Tabs (character sheet)
   document.querySelectorAll('.tab-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -1330,15 +1128,15 @@ function bindStaticListeners() {
     scheduleSave();
   });
 
-  // Pick from library (item) — adds straight to inventory, no separate "Use" step.
-  document.getElementById('itemLibrarySelect').addEventListener('change', (e) => {
-    const c = getActive();
-    const select = e.target;
-    if (!c || !select.value) return;
+  // Use from library (item)
+  document.getElementById('useLibraryItemBtn').addEventListener('click', () => {
+    const select = document.getElementById('itemLibrarySelect');
     const item = library.items.find((it) => it.id === select.value);
-    select.value = '';
     if (!item) return;
-    addLibraryItemToInventory(c, item);
+    document.getElementById('itemName').value = item.name;
+    document.getElementById('itemSlot').value = item.slot;
+    document.getElementById('itemRarity').value = item.rarity || '';
+    document.getElementById('itemNotes').value = item.notes || '';
   });
 
   // Item filters (Inventory tab picker)
@@ -1348,26 +1146,25 @@ function bindStaticListeners() {
   document.getElementById('itemFilterRarity').addEventListener('change', () => {
     populateItemLibrarySelect();
   });
-  document.getElementById('itemFilterUnique').addEventListener('change', () => {
-    populateItemLibrarySelect();
-  });
 
   // Get Random (character Inventory tab picker) — picks a random item from the
-  // currently filtered set, weighted by remaining copies, and adds it straight
-  // to inventory (same instant-add behavior as the library dropdown above).
+  // currently filtered set, weighted by remaining copies, and drops it straight
+  // into the Add Item form so it can be added with one more click.
   document.getElementById('randomItemBtn').addEventListener('click', () => {
-    const c = getActive();
-    if (!c) return;
-    const filtered = filterItems(library.items, 'itemFilterSlot', 'itemFilterRarity', 'itemFilterUnique');
+    const filtered = filterItems(library.items, 'itemFilterSlot', 'itemFilterRarity');
     const inPlayCounts = getInPlayCounts();
     const picked = pickRandomItem(filtered, inPlayCounts);
     if (!picked) {
       alert('No items with remaining copies match the current filters.');
       return;
     }
-    const remainingAfter = Math.max(0, getRemainingCount(picked, inPlayCounts) - 1);
-    addLibraryItemToInventory(c, picked);
-    alert(`🎲 Added ${picked.name} (${remainingAfter} of ${picked.quantity} remaining).`);
+    document.getElementById('itemLibrarySelect').value = picked.id;
+    document.getElementById('itemName').value = picked.name;
+    document.getElementById('itemSlot').value = picked.slot;
+    document.getElementById('itemRarity').value = picked.rarity || '';
+    document.getElementById('itemNotes').value = picked.notes || '';
+    const remaining = getRemainingCount(picked, inPlayCounts);
+    alert(`🎲 ${picked.name} (${remaining} of ${picked.quantity} remaining) — filled into the Add Item form below.`);
   });
 
   // Inventory form
@@ -1379,19 +1176,17 @@ function bindStaticListeners() {
     if (!name) return;
     const slot = document.getElementById('itemSlot').value;
     const rarity = document.getElementById('itemRarity').value;
-    const unique = document.getElementById('itemUnique').checked;
-    let equipped = document.getElementById('itemEquipped').checked;
-    if (equipped && !tryEquip(c, slot)) equipped = false;
+    const equipped = document.getElementById('itemEquipped').checked;
     const notes = document.getElementById('itemNotes').value.trim();
     const saveToLibrary = document.getElementById('itemSaveToLibrary').checked;
-    c.inventory.push({ id: uid(), name, slot, rarity, unique, equipped, notes });
+    c.inventory.push({ id: uid(), name, slot, rarity, equipped, notes });
 
     if (saveToLibrary) {
       const exists = library.items.some(
         (it) => it.name.toLowerCase() === name.toLowerCase() && it.slot === slot
       );
       if (!exists) {
-        library.items.push({ id: uid(), name, slot, rarity, unique, notes });
+        library.items.push({ id: uid(), name, slot, rarity, notes });
         populateItemLibrarySelect();
         renderLibraryItems();
         scheduleLibrarySave();
@@ -1408,16 +1203,15 @@ function bindStaticListeners() {
     populateAbilityLibrarySelect();
   });
 
-  // Pick from library (ability) — adds straight to the character, no separate "Use" step.
-  // The Discipline dropdown above still filters which abilities show up in this list.
-  document.getElementById('abilityLibrarySelect').addEventListener('change', (e) => {
-    const c = getActive();
-    const select = e.target;
-    if (!c || !select.value) return;
+  // Use from library (ability)
+  document.getElementById('useLibraryAbilityBtn').addEventListener('click', () => {
+    const select = document.getElementById('abilityLibrarySelect');
     const ability = library.abilities.find((a) => a.id === select.value);
-    select.value = '';
     if (!ability) return;
-    addLibraryAbilityToCharacter(c, ability);
+    document.getElementById('abilityName').value = ability.name;
+    document.getElementById('abilityDiscipline').value = ability.discipline;
+    document.getElementById('abilityTier').value = ability.tier || '';
+    document.getElementById('abilityDesc').value = ability.description || '';
   });
 
   // Ability form
@@ -1470,14 +1264,11 @@ function bindStaticListeners() {
   document.getElementById('libItemFilterRarity').addEventListener('change', () => {
     renderLibraryItems();
   });
-  document.getElementById('libItemFilterUnique').addEventListener('change', () => {
-    renderLibraryItems();
-  });
 
   // Get Random (Library screen Items tab) — picks a random item from the
   // currently filtered set, weighted by remaining copies, and flashes it in the list.
   document.getElementById('libRandomItemBtn').addEventListener('click', () => {
-    const filtered = filterItems(library.items, 'libItemFilterSlot', 'libItemFilterRarity', 'libItemFilterUnique');
+    const filtered = filterItems(library.items, 'libItemFilterSlot', 'libItemFilterRarity');
     const inPlayCounts = getInPlayCounts();
     const picked = pickRandomItem(filtered, inPlayCounts);
     if (!picked) {
@@ -1501,9 +1292,8 @@ function bindStaticListeners() {
     if (!name) return;
     const slot = document.getElementById('libItemSlot').value;
     const rarity = document.getElementById('libItemRarity').value;
-    const unique = document.getElementById('libItemUnique').checked;
     const notes = document.getElementById('libItemNotes').value.trim();
-    library.items.push({ id: uid(), name, slot, rarity, unique, notes });
+    library.items.push({ id: uid(), name, slot, rarity, notes });
     e.target.reset();
     renderLibraryItems();
     populateItemLibrarySelect();
@@ -1586,10 +1376,6 @@ function mergeLibraryData(data) {
         library.items[idx].quantity = it.quantity;
         changed = true;
       }
-      if (typeof it.unique === 'boolean' && it.unique !== library.items[idx].unique) {
-        library.items[idx].unique = it.unique;
-        changed = true;
-      }
       if (changed) summary.updated++;
       return;
     }
@@ -1598,7 +1384,6 @@ function mergeLibraryData(data) {
       name: it.name,
       slot: it.slot,
       rarity: it.rarity || '',
-      unique: !!it.unique,
       notes: it.notes || '',
       quantity: typeof it.quantity === 'number' && it.quantity > 0 ? it.quantity : 1,
     });
