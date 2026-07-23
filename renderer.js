@@ -130,6 +130,7 @@ async function init() {
   renderLibraryTemplates();
   showView('character');
   bindStaticListeners();
+  initNumberSpinners();
 }
 
 function normalizeLibrary() {
@@ -1810,6 +1811,53 @@ function bindSummonListeners(kind) {
     if (!c) return;
     c[kind].notes = e.target.value;
     scheduleSave();
+  });
+}
+
+function initNumberSpinners() {
+  document.querySelectorAll('input[type="number"]').forEach((input) => {
+    if (input.parentElement?.classList.contains('num-spin-wrap')) return;
+
+    const wrap = document.createElement('div');
+    wrap.className = 'num-spin-wrap';
+    input.parentNode.insertBefore(wrap, input);
+    wrap.appendChild(input);
+
+    const btnWrap = document.createElement('div');
+    btnWrap.className = 'spin-btns';
+
+    const upBtn = document.createElement('button');
+    upBtn.type = 'button';
+    upBtn.className = 'spin-btn spin-up';
+    upBtn.textContent = '▲';
+    upBtn.tabIndex = -1;
+
+    const downBtn = document.createElement('button');
+    downBtn.type = 'button';
+    downBtn.className = 'spin-btn spin-down';
+    downBtn.textContent = '▼';
+    downBtn.tabIndex = -1;
+
+    btnWrap.appendChild(upBtn);
+    btnWrap.appendChild(downBtn);
+    wrap.appendChild(btnWrap);
+
+    // Prevent input from losing focus when buttons are clicked
+    btnWrap.addEventListener('mousedown', (e) => e.preventDefault());
+
+    upBtn.addEventListener('click', () => {
+      const step = Number(input.step) || 1;
+      const max = input.max !== '' ? Number(input.max) : Infinity;
+      input.value = Math.min(max, (Number(input.value) || 0) + step);
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+    });
+
+    downBtn.addEventListener('click', () => {
+      const step = Number(input.step) || 1;
+      const min = input.min !== '' ? Number(input.min) : -Infinity;
+      input.value = Math.max(min, (Number(input.value) || 0) - step);
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+    });
   });
 }
 
