@@ -701,6 +701,68 @@ textarea:focus, input:focus, select:focus { outline: none; border-color: var(--a
   animation: savedFlash 1.2s ease-out;
 }
 
+/* CUSTOM NUMBER SPINNERS */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] { -moz-appearance: textfield; }
+
+.num-spin-wrap {
+  position: relative;
+  display: block;
+}
+.health-row .num-spin-wrap,
+.item-form .num-spin-wrap,
+.points-row .num-spin-wrap {
+  display: inline-block;
+}
+
+.num-spin-wrap input[type="number"] {
+  padding-right: 18px;
+}
+
+.spin-btns {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  width: 16px;
+  border-radius: 0 5px 5px 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.12s;
+}
+.num-spin-wrap:focus-within .spin-btns {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.spin-btn {
+  flex: 1;
+  background: var(--bg-elevated);
+  border: none;
+  border-left: 1px solid var(--border);
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  user-select: none;
+  transition: color 0.12s, background 0.12s;
+}
+.spin-up { border-bottom: 1px solid var(--border); }
+.spin-btn:hover {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
 /* SCROLLBARS */
 #sidebar::-webkit-scrollbar,
 #content::-webkit-scrollbar,
